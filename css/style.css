@@ -1,0 +1,62 @@
+body {
+    background: #272727;
+}
+.header__container {
+    padding: 20px 60px 26px 60px;
+}
+.header__logo {
+    position: relative;
+}
+.logo {
+    box-sizing: border-box;
+    position: absolute;
+    width: 40px;
+    height: 63px;
+   left: 0px;
+    top: 0px;
+
+border: 2px solid #FCD54C;
+z-index: 1;
+}
+
+.logo__text{
+    position: relative;
+    left: 1px;
+top: 1px;
+    z-index: 10;
+    height: 61px;
+    background: #272727;
+}
+
+.logo__text_title {
+    position: absolute;
+width: 169px;
+height: 28px;
+left: 15px;
+top: 7px;
+
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 35px;
+
+color: #FFFFFF;
+}
+.logo__suptext {
+    position: absolute;
+width: 113px;
+height: 9px;
+left: 15px;
+top: 39px;
+
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 13px;
+
+color: #FFFFFF;
+
+opacity: 0.6;
+}
