@@ -3,8 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.min.css"
+      integrity="sha512-JQksK36WdRekVrvdxNyV3B0Q1huqbTkIQNbz1dlcFVgNynEMRl0F8OSqOGdVppLUDIvsOejhr/W5L3G/b3J+8w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Dubai</title>
+    <title data-i18n="title">DubaiRealty</title>
 </head>
 <body>
     <header class="header">
@@ -13,13 +45,880 @@
                 <div class="logo"></div>
 
                 <div class="logo__text">
-                    <div class="logo__text_title">DubaiRealty</div>
+                    <div class="logo__text_title" data-i18n="title">DubaiRealty</div>
                     
-                    <div class="logo__suptext">Real Estate</div> 
+                    <div class="logo__suptext lng-suptitle" data-i18n="suptitle">Real Estate</div> 
+                </div>
+            </div>
+
+        <div class="header__menu">
+            <nav class="header__menu_list">
+                <ul class="menu__list">
+                    <li>
+                        <a href="#" class="menu__nav_inner menu_active" data-i18n="buy">buy</a>
+                        <img class="menu__nav_inner-pic"></img>
+                        <img src="./images/Rectangle 889.png" alt="" class="menu__nav_inner-pic">
+                        <ul class="sub__menu_list">
+                          <li>
+                            <a href="#" class="sub_header_inner" data-i18n="categorone">Category number one</a>
+                          </li>
+                          <li>
+                            <a href="#" class="sub_header_inner" data-i18n="apartments">Apartments in Dubai</a>
+                          </li>
+                          <li>
+                            <a href="#" class="sub_header_inner" data-i18n="category">Category number twenty five</a>
+                          </li>
+                        
+                        </ul>
+                        
+                    </li>
+                </ul>
+                <ul class="menu__list">
+                    <li><a href="#" class="menu__nav_inner" data-i18n="blog">blog</a></li>
+                    
+                </ul>
+                <ul class="menu__list">
+                    <li><a href="#" class="menu__nav_inner" data-i18n="about">about</a></li>
+                    
+                </ul>
+                <ul class="menu__list">
+                    <li><a href="#" class="menu__nav_inner" data-i18n="contact">contact</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="header__inner">
+                <div class="header__inner_botton">
+                    <button class="header__button" data-i18n="button">Book a consultation</button>
+                </div>
+                <div class="header__inner_lang">
+                    <ul class="header__lang-picker">
+                          <li id="english">en</li>
+                          <li id="ukrainian">ua</li>
+                    </ul>
+              </div>
+              <div class="header__inner_tel">
+                <a class="menu__inner_tel" href="tel:+38093 345 56 76"
+                >+38 (093) 345 56 76</a
+              >
+              </div>
+            </div>
+           
+        </div>
+        </div>
+    </header>
+    <section class="header__photo">
+        <div class="header__container">
+            <div class="header_slider">
+                <div class="header__slick_slider">
+                    <div class="header__photo-imgone">
+                        <div class="header__photo_text">
+                        <img src="./images/Rectangle 14.png" alt="">
+                        <div class="header__photo_text-text">
+                            <div class="header__photo_abovetitle">Lorem ipsum</div>
+                            <div class="header__photo_title" data-i18n="welcome">Welcome home 
+                                <span class="header__photo_title_yellow" data-i18n="to">to</span>
+                                <span class="header__photo_title" data-i18n="luxury">luxury</span>
+                            </div>
+                            <div class="header__photo_suptitle">Book a consultation
+                                <img class="header__photo_img" src="./images/Arrow.png" alt="">
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+              
+                <div class="header__slick_slider">
+                    <div class="header__photo-imgtwo">
+                        <div class="header__photo_text">
+                        <img src="./images/Rectangle 14.png" alt="">
+                        <div class="header__photo_text-text">
+                            <div class="header__photo_abovetitle">Lorem ipsum</div>
+                            <div class="header__photo_title" data-i18n="welcome">Welcome home 
+                                <span class="header__photo_title_yellow" data-i18n="to">to</span>
+                                <span class="header__photo_title" data-i18n="luxury">luxury</span>
+                            </div>
+                            <div class="header__photo_suptitle">Book a consultation
+                                <img class="header__photo_img" src="./images/Arrow.png" alt="">
+                            </div>
+                        </div>
+                        </div>                       
+                    </div>
+                </div>
+
+                <div class="header__slick_slider">
+                    <div class="header__photo-imgthree">
+                        <div class="header__photo_text">
+                        <img src="./images/Rectangle 14.png" alt="">
+                        <div class="header__photo_text-text">
+                            <div class="header__photo_abovetitle">Lorem ipsum</div>
+                            <div class="header__photo_title" data-i18n="welcome">Welcome home 
+                                <span class="header__photo_title_yellow" data-i18n="to">to</span>
+                                <span class="header__photo_title" data-i18n="luxury">luxury</span>
+                            </div>
+                            <div class="header__photo_suptitle">Book a consultation
+                                <img class="header__photo_img" src="./images/Arrow.png" alt="">
+                            </div>
+                        </div>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+     <section class="projects">
+     <div class="project__container">
+        <div class="project__inner">
+            
+        </div>
+        <div class="project__title">
+            <div class="project__slick_title">Latest projects</div>
+        <div class="project__slick_filter">
+            <buttom class="project__slick_button slick_button_active" data-name="all" id="all">All</buttom>
+            <buttom class="project__slick_button" data-name="villa" id="villa">Villa</buttom>
+            <buttom class="project__slick_button" data-name="house" id="house">House</buttom>
+            <buttom class="project__slick_button" data-name="interior" id="interior">Interior</buttom>
+            <!-- <buttom class="project__slick_button slick_button_view" data-name="view all">View all projects</buttom> -->
+
+        </div>    
+        </div>
+        <div class="slick__slider_filter">
+            <div class="slider__item filter-villa filter-all" data-name="villa">
+                <div class="slider__inner">
+                    <span class="slider__item-text">Villa</span>
+                    <div class="card__img">
+                        <img src="./images/villa1.png" alt="" class="slider__imag">
+                    </div>
+                    <div class="slider__item_text">
+                        <div class="slider__item_title">Dubai</div>
+                        <div class="slider__item_text_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</div>
+                        <div class="slider__item_subtitle">See project ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item filter-interior filter-all" data-name="interior">
+                <div class="slider__inner">
+                    <span class="slider__item-text">Interior</span>
+                    <div class="card__img">
+                        <img src="./images/Interior1.png" alt="" class="slider__imag">
+                    </div>
+                    <div class="slider__item_text">
+                        <div class="slider__item_title">Dubai</div>
+                        <div class="slider__item_text_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</div>
+                        <div class="slider__item_subtitle">See project ></div>
+                    </div>
+                </div>            
+            </div>
+            <div class="slider__item filter-house filter-all" data-name="house">
+                <div class="slider__inner">
+                    <span class="slider__item-text">House</span>
+                    <div class="card__img">
+                        <img src="./images/house1.png" alt="" class="slider__imag">
+                    </div>
+                    <div class="slider__item_text">
+                        <div class="slider__item_title">Dubai</div>
+                        <div class="slider__item_text_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</div>
+                        <div class="slider__item_subtitle">See project ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item filter-villa filter-all" data-name="villa">
+                <div class="slider__inner">
+                    <span class="slider__item-text">Villa</span>
+                    <div class="card__img">
+                        <img src="./images/villa2.jpg" alt="" class="slider__imag">
+                    </div>
+                    <div class="slider__item_text">
+                        <div class="slider__item_title">Dubai</div>
+                        <div class="slider__item_text_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</div>
+                        <div class="slider__item_subtitle">See project ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item filter-interior filter-all" data-name="interior">
+                <div class="slider__inner">
+                    <span class="slider__item-text">Interior</span>
+                    <div class="card__img">
+                        <img src="./images/Interior2.jpg" alt="" class="slider__imag">
+                    </div>
+                    <div class="slider__item_text">
+                        <div class="slider__item_title">Dubai</div>
+                        <div class="slider__item_text_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</div>
+                        <div class="slider__item_subtitle">See project ></div>
+                    </div>
+                </div>            
+            </div>
+            <div class="slider__item filter-house filter-all" data-name="house">
+                <div class="slider__inner">
+                    <span class="slider__item-text">House</span>
+                    <div class="card__img">
+                        <img src="./images/house2.png" alt="" class="slider__imag">
+                    </div>
+                    <div class="slider__item_text">
+                        <div class="slider__item_title">Dubai</div>
+                        <div class="slider__item_text_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</div>
+                        <div class="slider__item_subtitle">See project ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item filter-villa filter-all" data-name="villa">
+                <div class="slider__inner">
+                    <span class="slider__item-text">Villa</span>
+                    <div class="card__img">
+                        <img src="./images/villa3.png" alt="" class="slider__imag">
+                    </div>
+                    <div class="slider__item_text">
+                        <div class="slider__item_title">Dubai</div>
+                        <div class="slider__item_text_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</div>
+                        <div class="slider__item_subtitle">See project ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item filter-interior filter-all" data-name="interior">
+                <div class="slider__inner">
+                    <span class="slider__item-text">Interior</span>
+                    <div class="card__img">
+                        <img src="./images/interior3.jpg" alt="" class="slider__imag">
+                    </div>
+                    <div class="slider__item_text">
+                        <div class="slider__item_title">Dubai</div>
+                        <div class="slider__item_text_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</div>
+                        <div class="slider__item_subtitle">See project ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item filter-house filter-all" data-name="house">
+                <div class="slider__inner">
+                    <span class="slider__item-text">House</span>
+                    <div class="card__img">
+                        <img src="./images/house3.webp" alt="" class="slider__imag">
+                    </div>
+                    <div class="slider__item_text">
+                        <div class="slider__item_title">Dubai</div>
+                        <div class="slider__item_text_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</div>
+                        <div class="slider__item_subtitle">See project ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item filter-villa filter-all" data-name="villa">
+                <div class="slider__inner">
+                    <span class="slider__item-text">Villa</span>
+                    <div class="card__img">
+                        <img src="./images/villa1.png" alt="" class="slider__imag">
+                    </div>
+                    <div class="slider__item_text">
+                        <div class="slider__item_title">Dubai</div>
+                        <div class="slider__item_text_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</div>
+                        <div class="slider__item_subtitle">See project ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__item filter-interior filter-all" data-name="interior">
+                <div class="slider__inner">
+                    <span class="slider__item-text">Interior</span>
+                    <div class="card__img">
+                        <img src="./images/Interior1.png" alt="" class="slider__imag">
+                    </div>
+                    <div class="slider__item_text">
+                        <div class="slider__item_title">Dubai</div>
+                        <div class="slider__item_text_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</div>
+                        <div class="slider__item_subtitle">See project ></div>
+                    </div>
+                </div>            
+            </div>
+            <div class="slider__item filter-house filter-all" data-name="house">
+                <div class="slider__inner">
+                    <span class="slider__item-text">House</span>
+                    <div class="card__img">
+                        <img src="./images/house1.png" alt="" class="slider__imag">
+                    </div>
+                    <div class="slider__item_text">
+                        <div class="slider__item_title">Dubai</div>
+                        <div class="slider__item_text_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.</div>
+                        <div class="slider__item_subtitle">See project ></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-    <script src="js/script.js"></script>
+    </div>
+    </section>
+
+    <section class="apartment">
+        <div class="apartment__inner">
+            <div class="apartment__inner-toptitle">Our expertise</div>
+            <div class="apartment__inner-title">"The best apartment in Dubai" we will find your dream</div>
+            <div class="apartment__inner-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nibh massa, euismod ut libero id, blandit posuere augue. Morbi porta volutpat diam egestas ultrices. Phasellus tempus fringilla neque, nec viverra orci tristique vel. In efficitur vehicula magna, varius pellentesque nisl vehicula vel. Aenean vel sem ac elit commodo finibus in nec massa. Nulla facilisi. Nulla vestibulum venenatis sollicitudin. Etiam auctor mollis justo eu tincidunt. Aliquam varius varius tortor. Cras id venenatis sem. Quisque ut risus ex. Sed et tempor massa. Praesent ac eros hendrerit, congue justo ac, molestie urna. Fusce nec neque vitae dolor dapibus elementum. Maecenas nec orci quis sem condimentum dapibus varius a lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        </div>
+    </section>
+
+    <section class="video__popup">
+        <div class="video__popup_container">
+            <div class="video__popup_inner">
+                <img
+                    src="./images/placeholder.png"
+                    alt=""
+                    class="video__popup_inner_img" />
+                <img
+                    class="video__popup_inner_img_play popup-link"
+                    src="./images/play button.png"
+                    alt="" />
+            </div>
+        </div>
+        
+    </section>
+
+    <div class="popup">
+        <div class="popup_body">
+          <div class="popup_content video-container">
+            <a href="#" class="popup_close">&times;</a>
+            <div class="popup_content_video">
+              <div class="question_section_video">
+                <video width="1400" controls class="video">
+                  <source
+                    src="./images/dubaiapartment.mp4?autoplay=1"
+                    type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <section class="rectangle__colon">
+        <div class="rectangle__colon_container">
+            <div class="rectangle__colon_inner">
+                <div class="rectangle__colon_center_inner">
+                    <div class="rectangle__colon_text-centr">“Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.”
+                        <span class="rectangle__colon_text-centr-orang"> — Mary Kay Ash </span></div>
+                </div>
+                <div class="rectangle__colon_inner-colon">
+                    <div class="rectangle__colon-colon colon_one">
+                        <div class="rectangle__colon-colon-img">
+                            <img src="./images/placeholder2.png" alt="">
+                        </div>
+                        <div class="rectangle__colon-colon-text">Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.</div>
+                    </div>
+                    <div class="rectangle__colon-colon">
+                        <div class="rectangle__colon-colon-img">
+                            <img src="./images/villa3.png" alt="">
+                        </div>
+                        <div class="rectangle__colon-colon-text">Vivamus non diam vel lorem efficitur mattis in gravida ante. Ut ullamcorper dapibus ante, eu tincidunt orci feugiat vel. Curabitur eget lectus lectus. Pellentesque malesuada, felis at accumsan interdum, nisl mi fermentum est, eu suscipit dui lorem a dui. Aliquam rhoncus risus in leo vestibulum efficitur. Suspendisse tortor quam, faucibus a lacinia a, bibendum vitae quam. Suspen disse et metus et orci rutrum dictum eu eu nibh. Suspendisse blandit in diam in rhoncus. Nam volutpat hendrerit enim, sed aliquet quam gravida at. Nullam dictum sagittis nisi, eu porta sem mollis eu. Nulla faucibus sed ipsum sed sodales. Curabitur varius iaculis felis, in aliquet sem suscipit quis. Ut vulputate, magna ac bibendum elementum, nulla magna tincidunt urna, a venenatis dolor arcu sed leo. </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section class="contact">
+        <div class="contact__container">
+            <div class="contact__inner">
+                <div class="contact__inner_uptext">Do you have any questions?</div>
+                <div class="contact__inner_text">Contact us</div>
+                <div class="contact__inner_form">
+             <!-- <p class="inner__form_message" id="message"></p> -->
+             <form class="inner__form" method="post" action="https://formsubmit.co/sunrisebeamis@yahoo.com">
+             <input class="inner__form_input" type="email" name="name" id="email" placeholder="Enter your mail">
+             <button class="inner__form_btn" type="submit" id="btn">Send</button>
+             <!-- <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div> -->
+            </form>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="articles">
+        <div class="articles__container">
+            <div class="articles__title_inner">
+                <div class="articles__title">Useful articles</div>
+                <button class="articles__button">
+                    <a href="#" class="articles__button_a" data-i18n="buy">View all articles</a>
+                    <svg class="articles__button_svg" xmlns="http://www.w3.org/2000/svg" width="13" height="22" viewBox="0 0 13 22" fill="none">
+                        <path d="M12.3223 11.0273L1.00031 1.0028" stroke="#929292"/>
+                        <path d="M1 21.0273L12.322 11.0028" stroke="#929292"/>
+                        </svg>
+                </button>
+            </div>
+            <div class="articles__card_inner">
+                <div class="articles__card_card">
+                    <div class="card__inner">
+                        <span class="card__item-text">Discover Architecture</span>
+                        <div class="card__card_img">
+                            <img src="./images/articles.png" alt="" class="card__imag">
+                        </div>
+                        <div class="card__item_text">
+                            <div class="card__item_date">Jule 03, 2022</div>
+
+                            <div class="card__item_title">Discover Architecture</div>
+                            <div class="card__item_text_text">Projects for many large domestic and foreign corporations, enterprises in many elds such</div>
+                            <button class="card__button">
+                                <a href="#" class="card__item_a" data-i18n="buy">View all articles</a>
+                                <svg class="card__button_svg" xmlns="http://www.w3.org/2000/svg" width="13" height="22" viewBox="0 0 13 22" fill="none">
+                                    <path d="M12.3223 11.0273L1.00031 1.0028" stroke="#FCD54C"/>
+                                    <path d="M1 21.0273L12.322 11.0028" stroke="#FCD54C"/>
+                                    </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="articles__card_card">
+                    <div class="card__inner">
+                        <span class="card__item-text">Discover Architecture</span>
+                        <div class="card__card_img">
+                            <img src="./images/articles2.png" alt="" class="card__imag">
+                        </div>
+                        <div class="card__item_text">
+                            <div class="card__item_date">Jule 03, 2022</div>
+
+                            <div class="card__item_title">Discover Architecture</div>
+                            <div class="card__item_text_text">Projects for many large domestic and foreign corporations, enterprises in many elds such</div>
+                            <button class="card__button">
+                                <a href="#" class="card__item_a" data-i18n="buy">View all articles</a>
+                                <svg class="card__button_svg" xmlns="http://www.w3.org/2000/svg" width="13" height="22" viewBox="0 0 13 22" fill="none">
+                                    <path d="M12.3223 11.0273L1.00031 1.0028" stroke="#FCD54C"/>
+                                    <path d="M1 21.0273L12.322 11.0028" stroke="#FCD54C"/>
+                                    </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="articles__card_card">
+                    <div class="card__inner">
+                        <span class="card__item-text">Discover Architecture</span>
+                        <div class="card__card_img">
+                            <img src="./images/articles3.jpg" alt="" class="card__imag">
+                        </div>
+                        <div class="card__item_text">
+                            <div class="card__item_date">Jule 03, 2022</div>
+
+                            <div class="card__item_title">Discover Architecture</div>
+                            <div class="card__item_text_text">Projects for many large domestic and foreign corporations, enterprises in many elds such</div>
+                            <button class="card__button">
+                                <a href="#" class="card__item_a" data-i18n="buy">View all articles</a>
+                                <svg class="card__button_svg" xmlns="http://www.w3.org/2000/svg" width="13" height="22" viewBox="0 0 13 22" fill="none">
+                                    <path d="M12.3223 11.0273L1.00031 1.0028" stroke="#FCD54C"/>
+                                    <path d="M1 21.0273L12.322 11.0028" stroke="#FCD54C"/>
+                                    </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider__clients">
+        <div class="slider__clients_inner">
+            <div class="clients__inner_card">
+                <div class="clients__card_double">
+                    <div class="clients__card">
+                        <div class="clients__card_img">
+                            <img class="card__clients_img" src="./images/client1.png" alt="">
+                        </div>
+                        <div class="clients__card_quotes">”
+                        </div>
+                        <div class="clients__card_text">
+                            <div class="clients__card_name">Chris Evans</div>
+                            <div class="clients__card_subtitle">
+                            <span class="clients__card_subtitle_white">Owner in <span class="clients__card_subtitle_orange"> Paul.com</span></span>
+                            </div>
+                            <div class="clients__card-text">Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="clients__card">
+                        <div class="clients__card_img">
+                            <img class="card__clients_img" src="./images/client2.png" alt="">
+                        </div>
+                        <div class="clients__card_quotes">”
+                        </div>
+                        <div class="clients__card_text">
+                            <div class="clients__card_name">Chris Pratt</div>
+                            <div class="clients__card_subtitle">
+                            <span class="clients__card_subtitle_white">Founder in <span class="clients__card_subtitle_orange"> Apple inc.</span></span>
+                            </div>
+                            <div class="clients__card-text">Founded in 2007, Sparch is specializing in providing innovative services such as website design, brand identity and marketing
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="clients__card_double">
+                    <div class="clients__card">
+                        <div class="clients__card_img">
+                            <img class="card__clients_img" src="./images/client3.jfif" alt="">
+                        </div>
+                        <div class="clients__card_quotes">”
+                        </div>
+                        <div class="clients__card_text">
+                            <div class="clients__card_name"> Hanry Cavill</div>
+                            <div class="clients__card_subtitle">
+                            <span class="clients__card_subtitle_white">Owner in <span class="clients__card_subtitle_orange"> Paul.com</span></span>
+                            </div>
+                            <div class="clients__card-text">Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients__card">
+                        <div class="clients__card_img">
+                            <img class="card__clients_img" src="./images/client4.png" alt="">
+                        </div>
+                        <div class="clients__card_quotes">”
+                        </div>
+                        <div class="clients__card_text">
+                            <div class="clients__card_name">Chris Hemsworth</div>
+                            <div class="clients__card_subtitle">
+                            <span class="clients__card_subtitle_white">Founder in <span class="clients__card_subtitle_orange"> Apple inc.</span></span>
+                            </div>
+                            <div class="clients__card-text">Founded in 2007, Sparch is specializing in providing innovative services such as website design, brand identity and marketing
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="clients__card_double">
+                    <div class="clients__card">
+                        <div class="clients__card_img">
+                            <img class="card__clients_img" src="./images/client5.png" alt="">
+                        </div>
+                        <div class="clients__card_quotes">”
+                        </div>
+                        <div class="clients__card_text">
+                            <div class="clients__card_name">Tom Hardy</div>
+                            <div class="clients__card_subtitle">
+                            <span class="clients__card_subtitle_white">Owner in <span class="clients__card_subtitle_orange"> Paul.com</span></span>
+                            </div>
+                            <div class="clients__card-text">Projects for many large domestic and foreign corporations, enterprises in many elds such as nance, banking, F&B, education, communication.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clients__card">
+                        <div class="clients__card_img">
+                            <img class="card__clients_img" src="./images/client6.png" alt="">
+                        </div>
+                        <div class="clients__card_quotes">”
+                        </div>
+                        <div class="clients__card_text">
+                            <div class="clients__card_name">Robert John Downey Jr</div>
+                            <div class="clients__card_subtitle">
+                            <span class="clients__card_subtitle_white">Founder in <span class="clients__card_subtitle_orange"> Apple inc.</span></span>
+                            </div>
+                            <div class="clients__card-text">Founded in 2007, Sparch is specializing in providing innovative services such as website design, brand identity and marketing
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="faq__container">
+            <div class="faq__title_inner">
+            <div class="faq__title">faq</div>
+            <div class="faq__title_line"></div>
+            </div>
+            <div class="faqaccordion_card content_active">
+                <div class="faqaccordion_card_title-content">
+                    <div class="faqaccordion_card_title">
+                        The largest and oldest Quotations Page on the Web with about 30 categories
+                    </div>
+                    <div class="faqaccordion_card_arrow">
+                        <img class="faqaccordion_card_arrow-right" src="./images/arrow_right.png" alt="arrow-right">
+                        <img class="faqaccordion_card_arrow-down" src="./images/arrow_down.png" alt="arrow-down">
+                    </div>
+                </div>
+                <div class="faqaccordion__accordion_content">
+                    Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.
+                </div>
+                <div class="faq__title_line"></div>
+            </div>
+            <div class="faqaccordion_card">
+                <div class="faqaccordion_card_title-content">
+                    <div class="faqaccordion_card_title">
+                    A huge collection of inspirational quotes, thoughts of greatest minds in history 
+                    </div>
+                    <div class="faqaccordion_card_arrow">
+                        <img class="faqaccordion_card_arrow-right" src="./images/arrow_right.png" alt="arrow-right">
+                        <img class="faqaccordion_card_arrow-down" src="./images/arrow_down.png" alt="arrow-down">
+                    </div>
+                </div>
+                <div class="faqaccordion__accordion_content">
+                    Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.
+                </div>
+                <div class="faq__title_line"></div>
+            </div>
+            <div class="faqaccordion_card">
+                <div class="faqaccordion_card_title-content">
+                    <div class="faqaccordion_card_title">
+                    Quotations from the great works of literature  
+                    </div>
+                    <div class="faqaccordion_card_arrow">
+                        <img class="faqaccordion_card_arrow-right" src="./images/arrow_right.png" alt="arrow-right">
+                        <img class="faqaccordion_card_arrow-down" src="./images/arrow_down.png" alt="arrow-down">
+                    </div>
+                </div>
+                <div class="faqaccordion__accordion_content">
+                    Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.
+                </div>
+                <div class="faq__title_line"></div>
+            </div>
+            <div class="faqaccordion_card">
+                <div class="faqaccordion_card_title-content">
+                    <div class="faqaccordion_card_title">
+                        Read quotes and sayings from famous people in history
+                    </div>
+                    <div class="faqaccordion_card_arrow">
+                        <img class="faqaccordion_card_arrow-right" src="./images/arrow_right.png" alt="arrow-right">
+                        <img class="faqaccordion_card_arrow-down" src="./images/arrow_down.png" alt="arrow-down">
+                    </div>
+                </div>
+                <div class="faqaccordion__accordion_content">
+                    Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.
+                </div>
+                <div class="faq__title_line"></div>
+            </div>
+            <div class="faqaccordion_card">
+                <div class="faqaccordion_card_title-content">
+                    <div class="faqaccordion_card_title">
+                        Collected quotes from Albert Einstein
+                    </div>
+                    <div class="faqaccordion_card_arrow">
+                        <img class="faqaccordion_card_arrow-right" src="./images/arrow_right.png" alt="arrow-right">
+                        <img class="faqaccordion_card_arrow-down" src="./images/arrow_down.png" alt="arrow-down">
+                    </div>
+                </div>
+                <div class="faqaccordion__accordion_content">
+                    Sed in sem pellentesque, eleifend erat vitae, tincidunt turpis. Pellentesque augue elit, rutrum sit amet commodo vel, porta quis purus. Nullam faucibus, odio eu bibendum auctor, eros dolor aliquet purus, sit amet pellentesque neque est id tortor. In egestas, erat a dapibus dapibus, mi augue ornare lorem, nec pretium ligula purus nec tellus. Aenean a scelerisque nisi. Nullam pretium fermentum nunc, feugiat placerat urna rutrum eget. Nullam mattis justo consequat risus. Donec imperdiet enim id efficitur pharetra. Nam sollicitudin at est eget auctor. Ut sed ante quis nulla tincidunt auctor. Quisque accumsan pretium tincidunt. Etiam viverra ultrices est vitae suscipit. Pellentesque elementum purus non nisl pharetra consequat. Nunc in venenatis orci.
+                </div>
+                <div class="faq__title_line"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer__liner"></div>
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <img src="./images/Logo.png" alt="logo" class="footer__logo_img">
+            </div>
+            <div class="footer__colon_inner">
+                <div class="footer__colon Buy">
+                    <div class="footer__colon_title">
+                        <a class="footer__title" href="#">Buy</a></div>
+                    <nav class="footer_inner_nav Buy">
+                        <ul class="footer_colon_menu_list">
+                        <li>
+                            <a class="footer_inner_bottoms" href="#">Apartment in Dubai</a>
+                        </li>
+                        <li>
+                            <a class="footer_inner_bottoms" href="#">House in Dubai</a>
+                        </li>
+                        <li>
+                            <a class="footer_inner_bottoms" href="#">Apartments in Dubai</a>
+                        </li>
+                        <li>
+                            <a class="footer_inner_bottoms" href="#">Loft in Dubai</a>
+                        </li>
+                        <li>
+                            <a class="footer_inner_bottoms" href="#">Penthouse in Dubai</a>
+                        </li>
+                        <li>
+                            <a class="footer_inner_bottoms" href="#">Villa in Dubai</a>
+                        </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__colon ">
+                    <div class="footer__colon_title ">
+                        <a class="footer__title" href="#">Services</a></div>
+                        <nav class="footer_inner_nav Services">
+                            <ul class="footer_colon_menu_list">
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Property management in Dubai, UAE</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Sell ​​property in Dubai, UAE</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Rent property in Dubai, UAE</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Investments in Dubai, UAE</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Real estate for cryptocurrency in Dubai</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Moving to Dubai, UAE</a>
+                            </li>
+                            </ul>
+                        </nav>
+                </div>
+                <div class="footer__colon">
+                    <div class="footer__colon_title ">
+                        <a class="footer__title" href="#">Information</a></div>
+                        <nav class="footer_inner_nav Information">
+                            <ul class="footer_colon_menu_list">
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Video</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Podcasts</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Laws</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Questions and answers</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Books</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Articles</a>
+                            </li>
+                            </ul>
+                        </nav>
+                </div>
+                <div class="footer__colon ">
+                    <div class="footer__colon_title">
+                        <a class="footer__title" href="#">About company</a></div>
+                        <nav class="footer_inner_nav company">
+                            <ul class="footer_colon_menu_list">
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Jobs</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Story</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Licenses</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Why are we</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Real estate agency</a>
+                            </li>
+                            </ul>
+                        </nav>
+                </div>
+                <div class="footer__colon">
+                    <div class="footer__colon_title">
+                        <a class="footer__title" href="#">Contact</a></div>
+                        <nav class="footer_inner_nav Contact">
+                            <div class="footer_inner_bottoms-cont">
+                                964 Worthington Drive Dubai, UAE
+                            </div>
+                            <div class="footer_inner_bottoms-cont">
+                                dubairealty@mail.com
+                            </div>
+                            <button class="header__button bottoms-cont" data-i18n="button">Book a consultation</button>
+                        </nav>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer__liner"></div>
+        <div class="footer_date_fon">
+            <div class="footer_date">
+              <span>
+                Copyright © <span class="footer_date_st" id="yearFooter">xxxx</span> Dubai Realty
+              </span>
+            </div>
+            <span class="footer_data_social">
+                <ul class="footer__social_soc">
+                    <li>
+                      <a href="#" class="footer-social socila-facebook" target="_blank">
+                          <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="footer-social socila-linkedin" target="_blank">
+                          <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="footer-social socila-whatsapp">
+                          <i class="fa-brands fa-youtube"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer-social socila-skype">
+                          <i class="fa-brands fa-instagram fa-lg"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="footer-social socila-linkedin" target="_blank">
+                          <i class="fa-brands fa-linkedin-in"></i>  
+                      </a>
+                    </li>
+                   
+                  </ul>
+            </span>
+            <span class="footer_data_inform"></span>
+          </div>
+    </section>
+
+    <section class="social_links">
+        <div>
+          <div class="icon-bar">
+            <ul class="sticky-social_soc">
+              <li>
+                <a href="#" class="sticky-social socila-facebook" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a class="sticky-social socila-linkedin" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a class="sticky-social socila-whatsapp">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sticky-social socila-skype">
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                </a>
+              </li>
+              <li>
+                <a class="sticky-social socila-linkedin" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>                </a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+    <script
+    src="https://kit.fontawesome.com/9dca6ed803.js"
+    crossorigin="anonymous"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+
+
+
+  <script src="JS/slick.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
