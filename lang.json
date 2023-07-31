@@ -1,0 +1,34 @@
+{
+	"en": {
+		"title": "DubaiRealty",
+		"suptitle": "Real Estate",
+		"buy": "buy",
+		"categorone": "Category number one",
+		"apartments": "Apartments in Dubai",
+		"category": "Category number twenty five",
+		"blog": "blog",
+		"about": "about",
+		"contact": "contact",
+		"button": "Book a consultation",
+		"welcome": "Welcome home",
+		"to": "to",
+		"luxury": "luxury"
+		
+	},
+	"ua": {
+		"title": "нерухомість Дубаї",
+		"suptitle": "Нерухомість",
+		"buy": "покупка",
+		"categorone": "Категорія номер один",
+		"apartments": "Квартири в Дубаї",
+		"category": "Категорія номер двадцять п'ять",
+		"blog": "блог",
+		"about": "про нас",
+		"contact": "контакт",
+		"button": "Записатись на консультацію",
+		"welcome": "Ласкаво просимо до дому",
+		"luxury": "розкоші",
+		"to": "до"
+	}
+	
+}
