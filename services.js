@@ -179,37 +179,7 @@ $(document).ready(function() {
 
 
 
-///pop up +  video pause
-let popupLink = document.querySelectorAll(".popup-link");
-let closePopup = document.querySelector(".popup_close");
-let popup = document.querySelector(".popup");
-let popupBody = document.querySelector(".popup_body");
-let videoElem = document.querySelector(".video-container video");
 
-if (popupLink.length > 0) {
-  for (let i = 0; i < popupLink.length; i++) {
-    let popupLinks = popupLink[i];
-    popupLinks.addEventListener("click", (e) => {
-      e.preventDefault();
-      popup.classList.add("activePop");
-    });
-  }
-}
-
-closePopup.addEventListener("click", (e) => {
-  e.preventDefault();
-  videoElem.pause();
-  videoElem.currentTime = 0;
-  popup.classList.remove("activePop");
-});
-
-popup.addEventListener("click", (e) => {
-  if (!e.target.closest(".popup_content")) {
-    videoElem.pause();
-    videoElem.currentTime = 0;
-    popup.classList.remove("activePop");
-  }
-});
 
 ///validation email
 const email = document.querySelector('input[name=email]');
@@ -250,7 +220,7 @@ for (let i = 0; i < accordion_card.length; i++) {
 
 // faqaccordion_card
 let footer__colon = document.querySelectorAll(".footer__colon");
-console.log(footer__colon);
+// console.log(footer__colon);
 for (let i = 0; i < footer__colon.length; i++) {
   let footer__colon_nav = footer__colon[i];
   footer__colon_nav.addEventListener("click", function () {
@@ -273,38 +243,47 @@ document.getElementById("yearFooter").innerHTML = d.getFullYear();
 //////
 let data = 
 {
- "en": {
-   "buy": "buy",
-   "categorone": "Category number one",
-   "apartments": "Apartments in Dubai",
-   "category": "Category number twenty five",
-   "services": "services",
-   "about": "about",
-   "contact": "contact",
-   "button": "Book a consultation",
-   "welcome": "Welcome home",
-   "toto": "to",
-   "luxur": "luxury",
-   "book": "Book a consultation",
-   "atest": "Latest projects",
-   "all": "All",
-   "vill": "Villa",
-   "hous": "House",
-   "interior": "Interior",
-   "dubai": "Dubai",
-   "project": "See project >",
-   "lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.",
-   "expert": "Our expertise",
-   "apart": "'The best apartment in Dubai' we will find your dream",
-   "limit": "“Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.”",
-   "quest":"Do you have any questions?",
-   "contacus":"Contact us",
-   "send":"Send",
+  "en": {
+    "buy": "buy",
+    "categorone": "Category number one",
+    "apartments": "Apartments in Dubai",
+    "category": "Category number twenty five",
+    "services": "services",
+    "about": "about",
+    "contact": "contact",
+    "button": "Book a consultation",
+    "welcome": "Welcome home",
+    "toto": "to",
+    "luxur": "luxury",
+    "book": "Book a consultation",
+    "atest": "Latest projects",
+    "all": "All",
+    "vill": "Villa",
+    "hous": "House",
+    "interior": "Interior",
+    "dubai": "Dubai",
+    "project": "See project >",
+    "lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat molestie integer aliquam consectetur. Faucibus vitae dui massa tellus magna sit.",
+    "expert": "Our expertise",
+    "apart": "'The best apartment in Dubai' we will find your dream",
+    "limit": "“Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.”",
+    "quest":"Do you have any questions?",
+    "contacus":"Contact us",
+    "send":"Send",
     "articl":"View all articles",
     "seful":"Useful articles",
     "discover":"Discover Architectu",
     "projectsfor":"Projects for many large domestic and foreign corporations, enterprises in many elds such",
     "date":"Jule 03, 2022",
+    "rent":"Rent",
+    "furnished":'Furnished Apartments',
+    "in":"in Dubai",
+    "furnish":"Furnished Apartments in Dubai",
+    "main":"Main",
+    "response":"This response is important for our ability to learn from mistakes, but it alsogives rise to self-criticism, because it is part of the threat-protection system. In other words, what keeps us safe can go too far, and keep us too safe. In fact it can trigger self-censoring.",
+    "touch":"One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all:",
+    "methods":"Methods for Everyone",
+    "everyt":"Everything along the way, to and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up, looked at, tasted, smelled, and shaken. Everything was interesting to her. She knew nothing. I knew everything…been there, done that. She was in the moment, I was in the past. She was mindful. I was mindless.",
     "":"",
     "":"",
     "":"",
@@ -312,47 +291,59 @@ let data =
     "":"",
     "":"",
     "":"",
- },
- "ua": {
-   "buy": "покупка",
-   "categorone": "Категорія номер один",
-   "apartments": "Квартири в Дубаї",
-   "category": "Категорія номер 25",
-   "services": "сервіс",
-   "about": "про нас",
-   "contact": "контакт",
-   "button": "Записатись на консультацію",
-   "welcome": "Ласкаво просимо до дому",
-   "toto": "до",
-   "luxur": "розкоші",
-   "book": "Записатись на консультацію",
-   "atest": "Останні проекти",
-   "all": "ВСЕ",
-   "vill": "Вілла",
-   "hous": "Будинок",
-   "interior": "Інтер'єр",
-   "dubai":"Дубай",
-   "project": "Переглянути проект >",
-   "lorem": "Місто хмарочосів, шопінгу і незабутніх вражень.  Гігантський поліс, який простягається вздовж Перської затоки. Дубай – найяскравіше місто ОАЕ.",
-   "expert": "Наша експертиза",
-   "apart": "«Найкраща квартира в Дубаї» ми знайдемо вашу мрію",
-   "limit": "«Не обмежуйте себе. Багато людей обмежують себе тим, що, на їхню думку, можуть зробити. Ви можете зайти настільки далеко, наскільки вам дозволяє ваш розум. У що ви вірите, пам’ятайте, ви можете досягти». — Мері Кей Еш",
-   "quest":"У вас є які-небудь питання?",
-   "contacus":"Зв'яжіться з нами",
-   "send":"Надіслати",
-   "articl":"Переглянути всі статті",
-   "seful":"Корисні статті",
+    "":"",
+    "":""
+   
+  },
+  "ua": {
+    "buy": "покупка",
+    "categorone": "Категорія номер один",
+    "apartments": "Квартири в Дубаї",
+    "category": "Категорія номер 25",
+    "services": "сервіс",
+    "about": "про нас",
+    "contact": "контакт",
+    "button": "Записатись на консультацію",
+    "welcome": "Ласкаво просимо до дому",
+    "toto": "до",
+    "luxur": "розкоші",
+    "book": "Записатись на консультацію",
+    "atest": "Останні проекти",
+    "all": "ВСЕ",
+    "vill": "Вілла",
+    "hous": "Будинок",
+    "interior": "Інтер'єр",
+    "dubai":"Дубай",
+    "project": "Переглянути проект >",
+    "lorem": "Місто хмарочосів, шопінгу і незабутніх вражень.  Гігантський поліс, який простягається вздовж Перської затоки. Дубай – найяскравіше місто ОАЕ.",
+    "expert": "Наша експертиза",
+    "apart": "«Найкраща квартира в Дубаї» ми знайдемо вашу мрію",
+    "limit": "«Не обмежуйте себе. Багато людей обмежують себе тим, що, на їхню думку, можуть зробити. Ви можете зайти настільки далеко, наскільки вам дозволяє ваш розум. У що ви вірите, пам’ятайте, ви можете досягти». — Мері Кей Еш",
+    "quest":"У вас є які-небудь питання?",
+    "contacus":"Зв'яжіться з нами",
+    "send":"Надіслати",
+    "articl":"Переглянути всі статті",
+    "seful":"Корисні статті",
     "discover":"Відкрийте для себе архітектуру",
     "projectsfor":"Проекти для багатьох вітчизняних та іноземних корпорацій, підприємств у багатьох сферах",
     "date":"03 липня 2022 р",
+    "rent":"Оренда",
+    "furnished":'Мебльовані квартири',
+    "in":"у Дубаї",
+    "furnish":"Мебльовані апартаменти в Дубаї",
+    "main":"Головна",
+    "response":"Ця відповідь важлива для нашої здатності вчитися на помилках, але вона також породжує самокритику, оскільки є частиною системи захисту від загроз. Іншими словами, те, що тримає нас у безпеці, може зайти занадто далеко і зробити нас занадто безпечними. Насправді це може викликати самоцензуру.",
+    "touch":"Один дотик до розпеченої плити — це, як правило, все, що нам потрібно, щоб уникнути подібного дискомфорту в майбутньому. Те ж саме вірно, коли ми відчуваємо емоційне відчуття стресу від наших перших випадків соціального відторгнення або насмішок. Ми швидко вчимося боятися і таким чином автоматично уникаємо потенційно стресових ситуацій усіх видів, включаючи найпоширеніші з усіх:",
+    "methods":"Методи для всіх",
+    "everyt":"Усе, що проходило по дорозі, туди й назад, захоплювало її: кожен камінчик, мураха, палиця, листочок, травинка й тріщина на тротуарі — це було те, що можна було підняти, подивитися, спробувати на смак, понюхати й потрясти. Все їй було цікаво. Вона нічого не знала. Я знав усе… був там, робив це. Вона була в моменті, я був у минулому. Вона була уважна. Я був без розуму.",
     "":"",
     "":"",
-
     "":"",
     "":"",
     "":"",
-    "":"",
- }
+    "":""
+  
+  }
  
 }
 
@@ -368,7 +359,7 @@ function toRenderI18nContent( language ) {
 }
 
 function renderContentOnPage( language ) {
-  console.log('language rendered')
+  // console.log('language rendered')
   return i18nReferences.map( toRenderI18nContent( language ) )
 }
 
@@ -413,4 +404,82 @@ function setUserNavigatorDefaultLanguage( language ) {
 
 
 window.onload = renderContentBy( navigator.language )
-console.log('stored language:' + localStorage.getItem('language'))
+// console.log('stored language:' + localStorage.getItem('language'))
+// 
+// let term = document.querySelectorAll('.complete__plane_term');
+// console.log(term)
+
+
+// https://run.mocky.io/v3/0d03ca8f-ca8d-4780-80fe-bfe6e453fb57
+
+let card_plhold = document.getElementById("cardDiv");
+
+    fetch(`./data.json`)
+        .then((response) => response.json())
+        .then(function (data) {
+        let vadata = Object.values(data);
+        let valdata = vadata[0];
+        // console.log(valdata);
+
+        // let termAll = document.querySelectorAll('.complete__plate-check');
+        // let term = Array.from(termAll);
+        // console.log(term);
+   
+          // console.log(valdata.length);
+         valdata.forEach((obj) => {
+        for (let i = 0; i < valdata.length; i++) { 
+        if(obj.id === valdata[i].id){
+          // console.log(valdata[i].id);
+          // console.log(valdata.length);
+        card_plhold.innerHTML += `
+        <div class="complete__plane_term" data-name="${valdata[i].id}">
+        <div class="complete__plate-list" data-name="${valdata[i].id}">${valdata[i].package}</div>
+        <div class="complete__plate-check" data-name="${valdata[i].id}">${popupImg()} </div>
+        </div>
+        `; 
+        }
+      }
+      })
+        function popupImg() {
+          
+          // for (let i = 0; i < valdata.length; i++) {
+            let complete__plate = document.querySelectorAll(".complete__plate-check");
+            let completeAll = Array.from(complete__plate);
+            // console.log(completeAll);
+            // if(obj.id === valdata[i].id){
+              // console.log(obj.id === valdata[i].id)
+            // console.log(valdata[i].id);
+            // console.log(complete__plate);       
+                // completeAll.forEach((elem) => {
+                  // console.log(elem);
+                  // console.log(+elem.dataset.name);
+                  // console.log(valdata[i].id);
+                  // if (+elem.dataset.name === valdata[i].management ) {
+                  // console.log(elem);
+              //     if (valdata[i].management === true) {
+              //       console.log(5555);
+              // elem.innerHTML = 
+              //   `<div class="complete__plate-checkmark" data-name="${valdata[i].id}">1111</div>
+              //  `;
+              // }
+              // console.log(elem);
+            // }
+           //  })
+          // 
+        // };
+      // }
+        }
+      
+      
+// if (valdata[i].id === data[i].id) {
+ // <div class="complete__plate-check" data-name="${valdata[i].id}"> ${popupImg(valdata.id)}</div>
+//  <div class="complete__plate-manage" data-name="${valdata[i].id}">${valdata[i].control}</div>
+
+// }
+
+    // }
+        // popupImg(valdata);
+        })
+        .catch(function () {
+          //catch any errors
+        });

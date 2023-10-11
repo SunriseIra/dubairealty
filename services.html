@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.min.css"
+      integrity="sha512-JQksK36WdRekVrvdxNyV3B0Q1huqbTkIQNbz1dlcFVgNynEMRl0F8OSqOGdVppLUDIvsOejhr/W5L3G/b3J+8w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
+    <title data-i18n="dubai">Services</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="index.html">
+                    <div class="logo"></div>
+                    <div class="logo__text">
+                        <div class="logo__text_title">DubaiRealty</div>   
+                        <div class="logo__suptext lng-suptitle">Real Estate</div> 
+                    </div>
+                </a>
+                
+            </div>
+
+        <div class="header__menu">
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle_item">Menu</span>
+            </button>
+            <nav class="header__menu_list">
+                <ul class="menu__list">
+                    <li>
+                        <a href="#" class="menu__nav_inner menu_active" data-i18n="buy">buy</a>
+                        <img class="menu__nav_inner-pic"></img>
+                        <img src="./images/Rectangle 889.png" alt="rectangle" class="menu__nav_inner-pic">
+                        <ul class="sub__menu_list">
+                          <li>
+                            <a href="#" class="sub_header_inner" data-i18n="categorone">Category number one</a>
+                          </li>
+                          <li>
+                            <a href="#" class="sub_header_inner" data-i18n="apartments">Apartments in Dubai</a>
+                          </li>
+                          <li>
+                            <a href="#" class="sub_header_inner" data-i18n="category">Category number twenty five</a>
+                          </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu__list">
+                    <li><a href="#" class="menu__nav_inner" data-i18n="services">services</a></li>
+                </ul>
+                <ul class="menu__list">
+                    <li><a href="#" class="menu__nav_inner" data-i18n="about">about</a></li>
+                </ul>
+                <ul class="menu__list">
+                    <li><a href="#" class="menu__nav_inner" data-i18n="contact">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header__inner">
+                <div class="header__inner_botton">
+                    <button class="header__button" data-i18n="button">Book a consultation</button>
+                </div>
+                <div class="header__inner_lang">
+                    <ul class="header__lang-picker">
+                          <a class="button__lang lang__active" role="button" id="english" data-renderlanguage="en">en</a>
+                          <a class="button__lang" role="button" id="ukrainian" data-renderlanguage="ua">ua</a>
+                    </ul>
+              </div>
+              <div class="header__inner_tel">
+                <a class="menu__inner_tel" href="tel:+38093 345 56 76"
+                >+38 (093) 345 56 76</a
+              >
+              </div>
+            </div>
+           
+        </div>
+        </div>
+
+       
+
+
+    </header>
+
+    <section class="services__header">
+        <div class="services__container">
+            <div class="services__inner">
+                <div class="services__inner_text">
+                    <div class="services__inner_text-supertitle" data-i18n="rent">Rent</div>
+                        <span class="">
+                            <span class="services__photo_title" data-i18n="furnished">Furnished Apartments</span> &nbsp;  
+                            <span class="services__photo_title_yellow" data-i18n="in"> in Dubai</span>
+                        </span>
+                        <span></span>
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <section class="breadcrumbs">
+        <ul class="breadcrumb">
+          <li><a class="breadcrumb_a" href="index.html" data-i18n="main">Main</a></li>
+          <li><a class="breadcrumb_a" href="services.html" data-i18n="services">Services</a></li>
+          <li><a class="breadcrumb_a" href="" data-i18n="rent">Rent</a></li>
+          <li><span class="breadcrumb_a breadactive" data-i18n="furnish">Furnished Apartments in Dubai</span> </li>
+        </ul>
+      </section>
+
+      <section class="services__text">
+        <div class="services__text_container">
+            <div class="services__text_inner">
+
+                <div class="services__text_text" data-i18n="response">This response is important for our ability to learn from mistakes, but it alsogives rise to self-criticism, because it is part of the threat-protection system. In other words, what keeps us safe can go too far, and keep us too safe. In fact it can trigger self-censoring.</div>
+                <div class="services__text_text" data-i18n="touch"> One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all:</div>
+                <div class="services__text_text" data-i18n="response">This response is important for our ability to learn from mistakes, but it alsogives rise to self-criticism, because it is part of the threat-protection system. In other words, what keeps us safe can go too far, and keep us too safe. In fact it can trigger self-censoring.</div>
+                <div class="services__text_text" data-i18n="touch">One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all:</div>           
+            </div>
+
+           
+            
+        </div>
+      </section>
+      <section class="services__text">
+        <div class="services__text_container__photo">
+            <div class="services__text_inner_photo">
+
+                <div class="services__text_photo">
+                    <img src="./images/services/1110x628.png" alt="photo">
+                </div>
+            </div>        
+        </div>
+      </section>
+
+      <section class="services__text">
+        <div class="services__text_container">
+            <div class="services__text_inner">
+                <div class="services__text_title" data-i18n="methods">Methods for Everyone</div>
+                <div class="services__text_text" data-i18n="everyt">Everything along the way, to and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up, looked at, tasted, smelled, and shaken. Everything was interesting to her. She knew nothing. I knew everything…been there, done that. She was in the moment, I was in the past. She was mindful. I was mindless.</div>
+                <div class="services__text_text" data-i18n="touch">One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all: making mistakes.</div>
+
+                <div class="section__rectang_text">
+                    <div class="section__card_quotes">” </div>
+                    <div class="section__rectang_text-inner">
+
+                        <div class="section__rectang_text_text">Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time. emotional sensation of stress from our firs</div>
+                        <div class="section__rectang_text_subtext">
+                            <div class="section__rectang_text-name">Paul</div>
+                            <div class="section__rectang_text-namegr">Elite Author</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="services__photo">
+        <div class="services__photo_container">
+            <div class="services__photo-inner">
+            <div class="services__photo-colon">
+                <img class="services__photo-colon-img" src="./images/services/540x302.png" alt="">
+                <img class="services__photo-colon-imgt" src="./images/services/530x302.png" alt="">
+            </div>         
+            <div class="services__photo-colon">
+                <img src="./images/services/540x634.png" alt="">
+            </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="services__working">
+        <div class="services__working_container">
+            <div class="services__working_inner">
+                <div class="working_inner-number">
+                    <div class="number__inner">
+                        <div class="number__big">20</div>
+                        <div class="number__small">YEARS WORKING</div>
+                    </div>
+
+                    <div class="number__inner">
+                        <div class="number__big">7</div>
+                        <div class="number__small">TALANTED MANAGERS</div>
+                    </div>
+                    <div class="number__inner">
+                        <div class="number__bighun">100</div>
+                        <div class="number__big-plas">+</div>
+                        <div class="number__small">COMPLITLY PROJECTS</div>
+                    </div>
+                </div>
+                <div class="services__working_text">
+                    <div class="services__working_title">Challenge</div>
+                    <div class="services__working_text-text">To and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up, looked at, tasted, smelled, and shaken. Everything was interesting to her. She knew nothing. I knew everything…been there, done that. She was in the moment, I was in the past. She was mindful. I was mindless.</div>
+                    <div class="services__working_subtitle">Everything along the way</div>
+                    <div class="services__working_text-text">One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule. We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all: making mistakes.</div>
+                </div>
+                <div class="services__working_liner"></div>
+                <div class="services__working_textul">
+                    <ul>
+                        <li>Everything along the way, to and from, fascinated her: every pebble, ant, stick, leaf, blade of grass, and crack in the sidewalk was something to be picked up, looked at, tasted, smelled, and shaken.</li>
+                        <li>Everything was interesting to her. She knew nothing. I knew everything…been there, done that. She was in the moment, I was in the past. She was mindful. I was mindless.</li>
+                        <li>One touch of a red-hot stove is usually all we need to avoid that kind of discomfort in the future. The same is true as we experience the emotional sensation of stress from our first instances of social rejection or ridicule.</li>
+                        <li>We quickly learn to fear and thus automatically avoid potentially stressful situations of all kinds, including the most common of all: making mistakes.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="contact__container">
+            <div class="contact__inner">
+                <div class="contact__inner_uptext" data-i18n="quest">Do you have any questions?</div>
+                <div class="contact__inner_text" data-i18n="contacus">Contact us</div>
+                <div class="contact__inner_form">
+             <!-- <p class="inner__form_message" id="message"></p> -->
+             <form class="inner__form" method="post" action="https://formsubmit.co/sunrisebeamis@yahoo.com">
+             <input class="inner__form_input" type="email" name="name" id="email" placeholder="Enter your mail">
+             <button class="inner__form_btn" type="submit" id="btn" data-i18n="send">Send</button>
+             <!-- <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div> -->
+            </form>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="complete__plate">
+        <div class="complete__plate_container">
+            <div class="complete__plate_inner">
+                <div class="complete__plate_top">
+                    <div class="complete__plate_top-text">Included in the package</div>
+                    <div class="complete__plate_top-texttwo">
+                        <div class="complete__plate_top-manag">Complete management</div>
+                        <div class="complete__plate_top-control">Partial control</div>
+                    </div>
+
+                </div>
+                <div class="complete__plate_bottom" id="cardDiv">
+                    <!-- <div class="complete__plane_term">
+                        <div class="complete__plate-list">Real estate advertising</div>
+                        <div class="complete__plate-check">
+                            <div class="complete__plate-checkmark"></div>
+                    <div class="complete__plate-manage"></div>
+
+                        
+                        </div>
+                    </div>
+
+
+
+                    <div class="complete__plane_term">
+                        <div class="complete__plate-list">Search for tenantsg</div>
+                    </div>
+                    <div class="complete__plane_term">
+                        <div class="complete__plate-list">Conclusion of a lease agreement</div>
+                    </div>
+                    <div class="complete__plane_term">
+                        <div class="complete__plate-list">Getting paid </div>
+                    </div>
+                    <div class="complete__plane_term">
+                        <div class="complete__plate-list">Key handover</div>
+                    </div>
+                    <div class="complete__plane_term">
+                        <div class="complete__plate-list">Payment processing</div>
+                    </div>
+                    <div class="complete__plane_term">
+                        <div class="complete__plate-list">Dealing with repair requests</div>
+                    </div>
+                    <div class="complete__plane_term">
+                        <div class="complete__plate-list">DEWA connection (electricity/water)</div>
+                    </div>
+                    <div class="complete__plane_term">
+                        <div class="complete__plate-list">Registration of the rental agreement Ejari</div>
+                    </div>
+                    <div class="complete__plane_term">
+                        <div class="complete__plate-list">Separate administrator</div>
+                    </div>
+                    <div class="complete__plane_term">
+                        <div class="complete__plate-list">Detailed inspection of the object</div>
+                    </div>
+                    <div class="complete__plane_term">
+                        <div class="complete__plate-list">Property preparation before arrival</div>
+                    </div>
+                    <div class="complete__plane_term">
+                        <div class="complete__plate-list">Reporting</div>
+                    </div>
+                    <div class="complete__plane_term">
+                        <div class="complete__plate-list">Repair Request Management</div>
+                    </div>
+                    <div class="complete__plane_term">    
+                        <div class="complete__plate-list">Repair management</div>
+                </div> -->
+     
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <services class="propose">
+        <div class="propose__container">
+            <div class="propose__title_inner">
+                <div class="propose__title">We will also propose</div>
+                <button class="propose__button">
+                    <a href="#" class="propose__button_a" data-i18n="articl">View all articles</a>
+                    <svg class="propose__button_svg" xmlns="http://www.w3.org/2000/svg" width="13" height="22" viewBox="0 0 13 22" fill="none">
+                        <path d="M12.3223 11.0273L1.00031 1.0028" stroke="#929292"/>
+                        <path d="M1 21.0273L12.322 11.0028" stroke="#929292"/>
+                        </svg>
+                </button>
+            </div>
+            <div class="propose__card_inner">
+                <div class="propose__card_card">
+                    <div class="propose__inner">
+                        <span class="propose__item-text">Mortgage Registration</span>
+                        <div class="propose__card_img">
+                            <img class="propose__card_img-img" src="./images/services/350x350.png" alt="laceholder" class="card__imag">
+                        </div>
+                        <div class="propose__item_text">
+                            <div class="propose__item_title">Mortgage Registration</div>
+                            <div class="propose__item_text_text">A person applying for a mortgage in the United Arab Emirates must meet the following requirements</div>
+                            <button class="propose__button">
+                                <a href="#" class="propose__item_a">Learn more</a>
+                                <svg class="propose__button_svg" xmlns="http://www.w3.org/2000/svg" width="13" height="22" viewBox="0 0 13 22" fill="none">
+                                    <path d="M12.3223 11.0273L1.00031 1.0028" stroke="#FCD54C"/>
+                                    <path d="M1 21.0273L12.322 11.0028" stroke="#FCD54C"/>
+                                    </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="propose__card_card">
+                    <div class="propose__inner">
+                        <span class="propose__item-text">Mortgage Registration</span>
+                        <div class="propose__card_img">
+                            <img class="propose__card_img-img" src="./images/services/350x351.png" alt="laceholder" class="card__imag">
+                        </div>
+                        <div class="propose__item_text">
+                            <div class="propose__item_title">Mortgage Registration</div>
+                            <div class="propose__item_text_text">A person applying for a mortgage in the United Arab Emirates must meet the following requirements</div>
+                            <button class="propose__button">
+                                <a href="#" class="propose__item_a">Learn more</a>
+                                <svg class="propose__button_svg" xmlns="http://www.w3.org/2000/svg" width="13" height="22" viewBox="0 0 13 22" fill="none">
+                                    <path d="M12.3223 11.0273L1.00031 1.0028" stroke="#FCD54C"/>
+                                    <path d="M1 21.0273L12.322 11.0028" stroke="#FCD54C"/>
+                                    </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="propose__card_card">
+                    <div class="propose__inner">
+                        <span class="propose__item-text">Mortgage Registration</span>
+                        <div class="propose__card_img">
+                            <img class="propose__card_img-img" src="./images/services/350x350.png" alt="laceholder" class="card__imag">
+                        </div>
+                        <div class="propose__item_text">
+                            <div class="propose__item_title">Mortgage Registration</div>
+                            <div class="propose__item_text_text">A person applying for a mortgage in the United Arab Emirates must meet the following requirements</div>
+                            <button class="propose__button">
+                                <a href="#" class="propose__item_a">Learn more</a>
+                                <svg class="propose__button_svg" xmlns="http://www.w3.org/2000/svg" width="13" height="22" viewBox="0 0 13 22" fill="none">
+                                    <path d="M12.3223 11.0273L1.00031 1.0028" stroke="#FCD54C"/>
+                                    <path d="M1 21.0273L12.322 11.0028" stroke="#FCD54C"/>
+                                    </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </services>
+
+
+    <section class="footer">
+        <div class="footer__liner"></div>
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <img src="./images/Logo.png" alt="logo" class="footer__logo_img">
+            </div>
+            <div class="footer__colon_inner">
+                <div class="footer__colon Buy">
+                    <div class="footer__colon_title">
+                        <span class="footer__title" href="">Buy</span>
+                        <div class="footer_card_arrow">
+                            <img class="footer_card_arrow-right" src="./images/arrow_right.png" alt="arrow-right">
+                            <img class="footer_card_arrow-down" src="./images/arrow_down.png" alt="arrow-down">
+                        </div>
+                    </div>
+                       
+                    <nav class="footer_inner_nav Buy">
+                        <ul class="footer_colon_menu_list">
+                        <li>
+                            <a class="footer_inner_bottoms" href="#">Apartment in Dubai</a>
+                        </li>
+                        <li>
+                            <a class="footer_inner_bottoms" href="#">House in Dubai</a>
+                        </li>
+                        <li>
+                            <a class="footer_inner_bottoms" href="#">Apartments in Dubai</a>
+                        </li>
+                        <li>
+                            <a class="footer_inner_bottoms" href="#">Loft in Dubai</a>
+                        </li>
+                        <li>
+                            <a class="footer_inner_bottoms" href="#">Penthouse in Dubai</a>
+                        </li>
+                        <li>
+                            <a class="footer_inner_bottoms" href="#">Villa in Dubai</a>
+                        </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__colon ">
+                    <div class="footer__colon_title ">
+                        <span class="footer__title" href="">Services</span>
+                        <div class="footer_card_arrow">
+                            <img class="footer_card_arrow-right" src="./images/arrow_right.png" alt="arrow-right">
+                            <img class="footer_card_arrow-down" src="./images/arrow_down.png" alt="arrow-down">
+                        </div>
+                    </div>
+                        <nav class="footer_inner_nav Services">
+                            <ul class="footer_colon_menu_list">
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Property management in Dubai, UAE</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Sell ​​property in Dubai, UAE</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Rent property in Dubai, UAE</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Investments in Dubai, UAE</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Real estate for cryptocurrency in Dubai</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Moving to Dubai, UAE</a>
+                            </li>
+                            </ul>
+                        </nav>
+                </div>
+                <div class="footer__colon Information">
+                    <div class="footer__colon_title ">
+                        <span class="footer__title" href="">Information</span>
+                        <div class="footer_card_arrow">
+                            <img class="footer_card_arrow-right" src="./images/arrow_right.png" alt="arrow-right">
+                            <img class="footer_card_arrow-down" src="./images/arrow_down.png" alt="arrow-down">
+                        </div>
+                    </div>
+                        <nav class="footer_inner_nav Information">
+                            <ul class="footer_colon_menu_list">
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Video</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Podcasts</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Laws</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Questions and answers</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Books</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Articles</a>
+                            </li>
+                            </ul>
+                        </nav>
+                </div>
+                <div class="footer__colon ">
+                    <div class="footer__colon_title">
+                        <span class="footer__title" href="">About company</span>
+                        <div class="footer_card_arrow">
+                            <img class="footer_card_arrow-right" src="./images/arrow_right.png" alt="arrow-right">
+                            <img class="footer_card_arrow-down" src="./images/arrow_down.png" alt="arrow-down">
+                        </div>
+                    </div>
+                        <nav class="footer_inner_nav company">
+                            <ul class="footer_colon_menu_list">
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Jobs</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Story</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Licenses</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Why are we</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Real estate agency</a>
+                            </li>
+                            </ul>
+                        </nav>
+                </div>
+                <div class="footer__colon colon__contact">
+                    <div class="footer__colon_title colon_title_contact">
+                        <span class="footer__title" href="">Contact</span></div>
+                        <nav class="footer_inner_nav_cont Contact">
+                            <div class="footer_inner_bottoms_all">
+                                <div class="footer_inner_bottoms-cont">
+                                    964 Worthington Drive Dubai, UAE
+                                </div>
+                                <div class="footer_inner_bottoms-cont">
+                                    dubairealty@mail.com
+                                </div>
+                            </div>
+                            <button class="header__button bottoms-cont" data-i18n="button">Book a consultation</button>
+                        </nav>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer__liner"></div>
+        <div class="footer_date_fon">
+            <div class="footer_date">
+              <span>
+                Copyright © <span class="footer_date_st" id="yearFooter">xxxx</span> Dubai Realty
+              </span>
+            </div>
+            <span class="footer_data_social">
+                <ul class="footer__social_soc">
+                    <li>
+                      <a href="#" class="footer-social socila-facebook" target="_blank">
+                          <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="footer-social socila-linkedin" target="_blank">
+                          <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="footer-social socila-whatsapp">
+                          <i class="fa-brands fa-youtube"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer-social socila-skype">
+                          <i class="fa-brands fa-instagram fa-lg"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="footer-social socila-linkedin" target="_blank">
+                          <i class="fa-brands fa-linkedin-in"></i>  
+                      </a>
+                    </li>
+                   
+                  </ul>
+            </span>
+            <span class="footer_data_inform"></span>
+          </div>
+    </section>
+
+    <section class="social_links">
+        <div>
+          <div class="icon-bar">
+            <ul class="sticky-social_soc">
+              <li>
+                <a href="#" class="sticky-social socila-facebook" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a class="sticky-social socila-linkedin" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a class="sticky-social socila-whatsapp">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="sticky-social socila-skype">
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                </a>
+              </li>
+              <li>
+                <a class="sticky-social socila-linkedin" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>                </a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+    <script
+    src="https://kit.fontawesome.com/9dca6ed803.js"
+    crossorigin="anonymous"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+
+
+
+  <script src="JS/slick.min.js"></script>
+  <script src="services.js"></script>
+
+  <!-- <script src="app.js"></script> -->
+</body>
+</html>
