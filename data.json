@@ -1,0 +1,94 @@
+{
+    "data": [
+{
+    "id": 1,
+    "package": "Real estate advertising",
+    "management": true,
+    "control": true
+},
+{
+    "id": 2,
+    "package": "Search for tenantsg",
+    "management": true,
+    "control": true
+},
+{
+    "id": 3,
+    "package": "Conclusion of a lease agreement",
+    "management": true,
+    "control": true
+},
+{
+    "id": 4,
+    "package": "Getting paid",
+    "management": true,
+    "control": true
+},
+{
+    "id": 5,
+    "package": "Key handover",
+    "management": true,
+    "control": true
+},
+{
+    "id": 6,
+    "package": "Payment processing",
+    "management": true,
+    "control": true
+},
+{
+    "id": 7,
+    "package": "Dealing with repair requests",
+    "management": true,
+    "control": true
+},
+{
+    "id": 8,
+    "package": "DEWA connection (electricity/water)",
+    "management": true,
+    "control": true
+},
+{
+    "id": 9,
+    "package": "Registration of the rental agreement Ejari",
+    "management": true,
+    "control": true
+},
+{
+    "id": 10,
+    "package": "Separate administrator",
+    "management": true,
+    "control": true
+},
+{
+    "id": 11,
+    "package": "Detailed inspection of the object",
+    "management": false,
+    "control": true
+},
+{
+    "id": 12,
+    "package": "Property preparation before arrival",
+    "management": false,
+    "control": true
+},
+{
+    "id": 13,
+    "package": "Reporting",
+    "management": false,
+    "control": true
+},
+{
+    "id": 14,
+    "package": "Repair Request Management",
+    "management": false,
+    "control": true
+},
+{
+    "id": 15,
+    "package": "Repair management",
+    "management": false,
+    "control": true
+}
+    ]
+}

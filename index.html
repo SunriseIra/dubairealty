@@ -45,6 +45,7 @@
                 <div class="logo"></div>
 
                 <div class="logo__text">
+                    <a href="index.html"></a>
                     <div class="logo__text_title">DubaiRealty</div>
                     
                     <div class="logo__suptext lng-suptitle">Real Estate</div> 
@@ -75,7 +76,7 @@
                     </li>
                 </ul>
                 <ul class="menu__list">
-                    <li><a href="#" class="menu__nav_inner" data-i18n="blog">blog</a></li>
+                    <li><a href="services.html" class="menu__nav_inner" data-i18n="services">services</a></li>
                 </ul>
                 <ul class="menu__list">
                     <li><a href="#" class="menu__nav_inner" data-i18n="about">about</a></li>
@@ -90,7 +91,7 @@
                 </div>
                 <div class="header__inner_lang">
                     <ul class="header__lang-picker">
-                          <a class="button__lang" role="button" id="english" data-renderlanguage="en">en</a>
+                          <a class="button__lang lang__active" role="button" id="english" data-renderlanguage="en">en</a>
                           <a class="button__lang" role="button" id="ukrainian" data-renderlanguage="ua">ua</a>
                     </ul>
               </div>
@@ -105,7 +106,7 @@
         </div>
     </header>
     <section class="header__photo">
-        <div class="header__container">
+        <div class="photo__container">
             <div class="header_slider">
                 <div class="header__slick_slider">
                     <div class="header__photo-imgone">
@@ -114,8 +115,8 @@
                         <div class="header__photo_text-text">
                             <div class="header__photo_abovetitle">Lorem ipsum</div>
                             <span class="">
-                                <span class="header__photo_title" data-i18n="welcome">Welcome home </span>
-                                <span class="header__photo_title_yellow" data-i18n="toto">to</span>
+                                <span class="header__photo_title" data-i18n="welcome">Welcome home </span> &nbsp;
+                                <span class="header__photo_title_yellow" data-i18n="toto">to</span> &nbsp;
                                 <span class="header__photo_title" data-i18n="luxur">luxury</span>
                             </span>
                             <div class="header__photo_suptitle">Book a consultation
@@ -420,13 +421,13 @@
     <section class="contact">
         <div class="contact__container">
             <div class="contact__inner">
-                <div class="contact__inner_uptext">Do you have any questions?</div>
-                <div class="contact__inner_text">Contact us</div>
+                <div class="contact__inner_uptext" data-i18n="quest">Do you have any questions?</div>
+                <div class="contact__inner_text" data-i18n="contacus">Contact us</div>
                 <div class="contact__inner_form">
              <!-- <p class="inner__form_message" id="message"></p> -->
              <form class="inner__form" method="post" action="https://formsubmit.co/sunrisebeamis@yahoo.com">
-             <input class="inner__form_input" type="email" name="name" id="email" placeholder="Enter your mail">
-             <button class="inner__form_btn" type="submit" id="btn">Send</button>
+             <input class="inner__form_input" data-i18n="mail" type="email" name="name" id="email" placeholder="Enter your mail">
+             <button class="inner__form_btn" type="submit" id="btn" data-i18n="send">Send</button>
              <!-- <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div> -->
             </form>
             </div>
@@ -437,9 +438,9 @@
     <section class="articles">
         <div class="articles__container">
             <div class="articles__title_inner">
-                <div class="articles__title">Useful articles</div>
+                <div class="articles__title" data-i18n="seful">Useful articles</div>
                 <button class="articles__button">
-                    <a href="#" class="articles__button_a" data-i18n="buy">View all articles</a>
+                    <a href="#" class="articles__button_a" data-i18n="articl">View all articles</a>
                     <svg class="articles__button_svg" xmlns="http://www.w3.org/2000/svg" width="13" height="22" viewBox="0 0 13 22" fill="none">
                         <path d="M12.3223 11.0273L1.00031 1.0028" stroke="#929292"/>
                         <path d="M1 21.0273L12.322 11.0028" stroke="#929292"/>
@@ -449,17 +450,17 @@
             <div class="articles__card_inner">
                 <div class="articles__card_card">
                     <div class="card__inner">
-                        <span class="card__item-text">Discover Architecture</span>
+                        <span class="card__item-text" data-i18n="discover">Discover Architecture</span>
                         <div class="card__card_img">
                             <img class="card__card_img-img" src="./images/articles.png" alt="laceholder" class="card__imag">
                         </div>
                         <div class="card__item_text">
-                            <div class="card__item_date">Jule 03, 2022</div>
+                            <div class="card__item_date" data-i18n="date">Jule 03, 2022</div>
 
-                            <div class="card__item_title">Discover Architecture</div>
-                            <div class="card__item_text_text">Projects for many large domestic and foreign corporations, enterprises in many elds such</div>
+                            <div class="card__item_title" data-i18n="discover">Discover Architecture</div>
+                            <div class="card__item_text_text" data-i18n="projectsfor">Projects for many large domestic and foreign corporations, enterprises in many elds such</div>
                             <button class="card__button">
-                                <a href="#" class="card__item_a" data-i18n="buy">View all articles</a>
+                                <a href="#" class="card__item_a" data-i18n="articl">View all articles</a>
                                 <svg class="card__button_svg" xmlns="http://www.w3.org/2000/svg" width="13" height="22" viewBox="0 0 13 22" fill="none">
                                     <path d="M12.3223 11.0273L1.00031 1.0028" stroke="#FCD54C"/>
                                     <path d="M1 21.0273L12.322 11.0028" stroke="#FCD54C"/>
@@ -470,17 +471,17 @@
                 </div>
                 <div class="articles__card_card">
                     <div class="card__inner">
-                        <span class="card__item-text">Discover Architecture</span>
+                        <span class="card__item-text" data-i18n="discover">Discover Architecture</span>
                         <div class="card__card_img">
                             <img class="card__card_img-img" src="./images/articles2.png" alt="laceholder" class="card__imag">
                         </div>
                         <div class="card__item_text">
-                            <div class="card__item_date">Jule 03, 2022</div>
+                            <div class="card__item_date" data-i18n="date">Jule 03, 2022</div>
 
-                            <div class="card__item_title">Discover Architecture</div>
-                            <div class="card__item_text_text">Projects for many large domestic and foreign corporations, enterprises in many elds such</div>
+                            <div class="card__item_title" data-i18n="discover">Discover Architecture</div>
+                            <div class="card__item_text_text" data-i18n="projectsfor">Projects for many large domestic and foreign corporations, enterprises in many elds such</div>
                             <button class="card__button">
-                                <a href="#" class="card__item_a" data-i18n="buy">View all articles</a>
+                                <a href="#" class="card__item_a" data-i18n="articl">View all articles</a>
                                 <svg class="card__button_svg" xmlns="http://www.w3.org/2000/svg" width="13" height="22" viewBox="0 0 13 22" fill="none">
                                     <path d="M12.3223 11.0273L1.00031 1.0028" stroke="#FCD54C"/>
                                     <path d="M1 21.0273L12.322 11.0028" stroke="#FCD54C"/>
@@ -491,17 +492,17 @@
                 </div>
                 <div class="articles__card_card">
                     <div class="card__inner">
-                        <span class="card__item-text">Discover Architecture</span>
+                        <span class="card__item-text" data-i18n="discover">Discover Architecture</span>
                         <div class="card__card_img">
                             <img class="card__card_img-img" src="./images/articles.png" alt="laceholder" class="card__imag">
                         </div>
                         <div class="card__item_text">
-                            <div class="card__item_date">Jule 03, 2022</div>
+                            <div class="card__item_date" data-i18n="date">Jule 03, 2022</div>
 
-                            <div class="card__item_title">Discover Architecture</div>
-                            <div class="card__item_text_text">Projects for many large domestic and foreign corporations, enterprises in many elds such</div>
+                            <div class="card__item_title" data-i18n="discover">Discover Architecture</div>
+                            <div class="card__item_text_text" data-i18n="projectsfor">Projects for many large domestic and foreign corporations, enterprises in many elds such</div>
                             <button class="card__button">
-                                <a href="#" class="card__item_a" data-i18n="buy">View all articles</a>
+                                <a href="#" class="card__item_a" data-i18n="articl">View all articles</a>
                                 <svg class="card__button_svg" xmlns="http://www.w3.org/2000/svg" width="13" height="22" viewBox="0 0 13 22" fill="none">
                                     <path d="M12.3223 11.0273L1.00031 1.0028" stroke="#FCD54C"/>
                                     <path d="M1 21.0273L12.322 11.0028" stroke="#FCD54C"/>
@@ -951,6 +952,6 @@
 
 
   <script src="JS/slick.min.js"></script>
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

@@ -34,6 +34,11 @@ p {
   display: flex;
   position: relative;
 }
+.photo__container {
+  padding: 90px 60px 6px 60px;
+  display: flex;
+  position: relative;
+}
 .header__logo {
   position: relative;
   width: 170px;
@@ -43,10 +48,11 @@ p {
   box-sizing: border-box;
   position: absolute;
   width: 40px;
-  height: 63px;
+  height: 65px;
   left: 0px;
   top: 0px;
-  border: 2px solid #FCD54C;
+  background-image: url(../images/Rectangle114.png);
+  /* border: 2px solid #FCD54C; */
   z-index: 1;
 }
 
@@ -56,7 +62,7 @@ p {
   top: 1px;
   z-index: 10;
   height: 61px;
-  background: #272727;
+  /* background: #272727; */
 }
 
 .logo__text_title {
@@ -85,6 +91,13 @@ p {
   color: #FFFFFF;
   opacity: 0.6;
 }
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  height: 95px;
+  /* background: #272727; */
+}
 .header__menu {
   display: flex;
   align-items: center;
@@ -97,6 +110,49 @@ p {
   position: relative;
   width: 100%;
   justify-content: inherit;
+  height: 70px;
+  padding: 0 30px;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 50px;
+}
+.header__menu_list:hover {
+  background: #434343;
+  border-radius: 50px;
+}
+.header__menu_list:hover, .header__menu_list:focus, .header__menu_list:active {
+  color: #FCD54C;
+}
+
+.header__menu_list a {
+  display: inline-block;
+  padding: 12px;
+  border-radius: 22px;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -.03em;
+  z-index: 3;
+  position: relative;
+  transition: 1s;
+}
+
+
+.tel-menu {
+  display: none;
+}
+.shadow-menu {
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 10000;
+  background: #272727;
+  box-shadow: 0px 4px 12px rgba(24, 9, 96, 0.1);
+  padding: 20px 60px 6px 60px;
 }
 .menu__list li a {
   font-family: 'Work Sans';
@@ -119,21 +175,24 @@ p {
   align-items: center;
   list-style: none;
   width: 266px;
-  height: 36px;
+  height: 41px;
   background: #272727;
   border: 1px solid #979797;
   z-index: 50;
+  border-radius: 50px;
 }
 .sub__menu_list {
   display: none;
   position: absolute;
   top: 18px;
   width: 266px;
-  padding: 6px 0px 12px 0px; 
+  border-radius: 50px;
+  padding: 36px 0px 12px 0px; 
+  margin-left: -10px;
 }
+
 .sub__menu_list
 .sub_header_inner {
-  height: 37px;
   width: 266px;
   display: flex;
   align-items: center;
@@ -141,7 +200,8 @@ p {
 }
 .sub_header_inner:hover{
   background: #FCD54C;
-  color:#272727
+  color:#272727;
+  border-radius: 50px;
 }
 .header__menu_list a {
   text-decoration: none;
@@ -157,11 +217,15 @@ p {
 .menu__nav_inner:hover {
   color:#FCD54C;
 }
-.menu__list > li:hover, .sub__menu_list:hover  {
+.menu__list > li:hover {
+  width: 130%;
+  /* margin-left: -20px; */
   color:#FCD54C;
+  border-radius: 50px;
+  background: #272727;
 }
 
-.menu__nav_inner:hover:after {
+/* .menu__nav_inner:hover:after {
   color:#FCD54C;
   background-color: #FCD54C;
   content: "";
@@ -170,12 +234,12 @@ p {
   position: absolute;
   display: block;
   align-items: center;
-}
+} */
 
 .header__inner {
   display:flex;
   justify-content: space-between;
-  padding-left: 29%;
+  padding-left: 26%;
   width: 100%;
 }
 .header__inner_botton {
@@ -203,7 +267,7 @@ p {
   display: flex;
 }
 .header__lang-picker a {
-  color:#929292;
+color:#ffffff;
 text-decoration: none;
 list-style: none;
 padding-left: 10px;
@@ -212,13 +276,20 @@ font-size: 14px;
 font-weight: 600;
 text-transform: uppercase;
 }
+.lang__active a {
+  color:#FCD54C;
+}
 .menu__inner_tel {
  text-decoration: none;
  color: #FFF;
  font-size: 16px;
  font-weight: 600;
 }
-.header__inner_lang, .header__inner_tel{
+.header__inner_lang{
+  display: flex;
+  align-items: center;
+}
+.header__inner_tel{
   display: flex;
   align-items: center;
 }
@@ -242,7 +313,6 @@ text-transform: uppercase;
   max-width: 100%;
   height: 971px;
   flex-shrink: 0;
-  
   background-position: center;
   overflow: hidden;
 }
@@ -929,9 +999,6 @@ padding-bottom: 54px;
   border: 1px solid #FCD54C;
   fill: #272727;
   /* width: 350px; */
-}
-.card__card_img img {
-
 }
 .card__card_img-img {
   margin: -2px;
