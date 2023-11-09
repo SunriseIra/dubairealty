@@ -516,7 +516,7 @@ let card_plhold = document.getElementById("cardDiv");
 
       // 
       let map;
-      // let marker;
+
       
 
       function initMap() {
@@ -534,7 +534,6 @@ let card_plhold = document.getElementById("cardDiv");
         marker.addListener("click", toggleBounce);
       }
 
-
       function toggleBounce() {
         if (marker.getAnimation() !== null) {
           marker.setAnimation(null);
@@ -542,57 +541,9 @@ let card_plhold = document.getElementById("cardDiv");
           marker.setAnimation(google.maps.Animation.BOUNCE);
         }
       }
-  //     async function initMap() {
-  // const position = { lat: 25.0731, lng: 55.29 };
-
-  // const { Map } = await google.maps.importLibrary("maps");
-  // // const  AdvancedMarkerView = new google.maps.importLibrary("marker");
-
-  // map = new Map(document.getElementById("map"), {
-  //   center: { lat: 25.07, lng: 55.2},
-  //   // mapId: "DEMO_MAP_ID",
-  //   zoom: 10,
-  // });
-
-
-  // async function initMap() {
-  //   const position = { lat: 25.0731, lng: 55.29 };
-  
-  //   const { Map } = await google.maps.importLibrary("maps");
-  //   // const  AdvancedMarkerView = new google.maps.importLibrary("marker");
-  
-  //   map = new Map(document.getElementById("map"), {
-  //     center: { lat: 25.07, lng: 55.2},
-  //     // mapId: "DEMO_MAP_ID",
-  //     zoom: 10,
-  //   });
-
-  // const marker = new google.maps.Marker({
-  //   map,
-  //   draggable: true,
-  //   animation: google.maps.Animation.DROP,
-  //   position: { lat: 59.327, lng: 18.067 },
-  // });
-  // marker.addListener("click", toggleBounce);
-// }
-// function toggleBounce() {
-//   if (marker.getAnimation() !== null) {
-//   marker.setAnimation(null);
-//   } else {
-//   marker.setAnimation(google.maps.Animation.BOUNCE);
-//   }
-//   }
-  
-
-  // const marker = new AdvancedMarkerView({
-  //    map,
-  //   position: position,
-  //   // title: "Dubai",
-  //   icon: image,
-  // });
-
+ 
 window.initMap = initMap
-// initMap();
+
 
 
 
