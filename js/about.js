@@ -1,3 +1,163 @@
+
+window.addEventListener("load", (event) => {
+  let current_page = 1;
+  let steps = 12;
+  let blog_card = document.querySelectorAll(".blog__picture_card");
+  let blog_card_all = Array.from(blog_card);
+  // console.log(blog_card_all)
+
+
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+
+  let myactivePage = +urlParams.get("page") === 0 ? 1 : +urlParams.get("page");
+  let activePage = myactivePage;  
+  
+  let pageSpan = document.querySelector(".blog_page");
+  let pagesCount = Math.ceil(blog_card_all.length / steps);
+
+  function DisplayList (items, steps, page) {
+    page--;
+    let start = steps * page;
+    let end =start + steps;
+    let paginatedItems = items.slice(start, end);
+  // console.log(paginatedItems)
+
+
+  $('#pagingBox').children().css('display', 'none').slice(start, end).css('display', 'block');
+ 
+  }
+
+  function SetupPagination (items, pageSpan, steps,page) {
+    pageSpan.innerHTML = '';
+     let pagesCount = Math.ceil(items.length / steps);
+     for(let i=1; i < pagesCount+1; i++ ) {
+        let btn = PaginationButton (i, items, pageSpan, steps);
+        pageSpan.appendChild(btn);
+      }
+
+    let currentItemLi = document.querySelector(".paginationItem_active");
+    let currentPage = +currentItemLi.innerText;
+
+    let liElCur = document.querySelectorAll(".paginationItem");
+    let allliElCur = Array.from(liElCur);
+    // console.log(allliElCur);
+
+  if (urlParams.has("page") == false) {
+    // console.log('yes')
+      const nextURL = `?page=${activePage}`;
+      const nextTitle = activePage + 1;
+      window.history.replaceState(null, nextTitle, nextURL);
+    } else {
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      let myactivePage =
+        +urlParams.get("page") === 1 ? 1 : +urlParams.get("page");
+      let activePage = myactivePage;
+
+    }
+ }
+
+function PaginationButton (page, items, pageSpan, row_page) {
+  let ulEl = document.createElement("ul");
+      ulEl.classList.add("paginationList");
+  let liEl = document.createElement("li");
+  liEl.classList.add("paginationItem");
+  liEl.innerText = page;
+  ulEl.appendChild(liEl);
+  
+  if (current_page == page) {
+    liEl.classList.add("paginationItem_active");
+  } 
+  // console.log();
+
+  liEl.addEventListener("click", function () {
+
+    DisplayList (items, steps, page); 
+    let currentItemLi = document.querySelector(".paginationItem_active");
+    let currentPage = +currentItemLi.innerText;
+     const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString)
+    let myactivePage =
+         +urlParams.get("page") === 1 ? 1 : +urlParams.get("page"); 
+     currentPage == page;
+     
+     currentItemLi.classList.remove("paginationItem_active");
+     liEl.classList.add("paginationItem_active");
+
+     activePage = page;
+     const nextURL = `?page=${activePage}`;
+     const nextTitle = activePage;
+     window.history.replaceState(null, nextTitle, nextURL);
+
+
+    })
+  return liEl;
+
+}
+
+DisplayList (blog_card_all, steps, current_page);
+
+SetupPagination (blog_card_all, pageSpan, steps,current_page)
+
+})
+
+
+const indicator = document.querySelector('.nav-indicator');
+const items = document.querySelectorAll('.menu__list');
+const menu = document.querySelector('.header__menu_list');
+
+function handleIndicator(el) {
+  items.forEach(item => {
+    item.classList.remove('menu_active');
+    item.removeAttribute('style');
+  });
+  
+  indicator.style.width = `${el.offsetWidth}px`;
+  indicator.style.left = `${el.offsetLeft}px`;
+  el.classList.add('menu_active');
+}
+function resetIndicator() {
+  indicator.style.setProperty('left', 0);
+  indicator.style.setProperty('width', 0);
+}
+
+items.forEach((item) => {
+  item.addEventListener('mouseover', (e) => {
+    handleIndicator(e.target)
+  });
+  item.classList.contains('menu_active') && handleIndicator(item);
+});
+  menu.addEventListener('mouseleave', function() {
+    resetIndicator();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // burger menu
 let inner_nav = document.querySelector(".header__menu_list");
 let toggle = document.querySelector(".nav-toggle");
@@ -176,41 +336,6 @@ $(document).ready(function() {
     ]
   });
 
-
-
-
-///pop up +  video pause
-let popupLink = document.querySelectorAll(".popup-link");
-let closePopup = document.querySelector(".popup_close");
-let popup = document.querySelector(".popup");
-let popupBody = document.querySelector(".popup_body");
-let videoElem = document.querySelector(".video-container video");
-
-if (popupLink.length > 0) {
-  for (let i = 0; i < popupLink.length; i++) {
-    let popupLinks = popupLink[i];
-    popupLinks.addEventListener("click", (e) => {
-      e.preventDefault();
-      popup.classList.add("activePop");
-    });
-  }
-}
-
-closePopup.addEventListener("click", (e) => {
-  e.preventDefault();
-  videoElem.pause();
-  videoElem.currentTime = 0;
-  popup.classList.remove("activePop");
-});
-
-popup.addEventListener("click", (e) => {
-  if (!e.target.closest(".popup_content")) {
-    videoElem.pause();
-    videoElem.currentTime = 0;
-    popup.classList.remove("activePop");
-  }
-});
-
 ///validation email
 const email = document.querySelector('input[name=email]');
 const button = document.querySelector('#btn');
@@ -250,7 +375,7 @@ for (let i = 0; i < accordion_card.length; i++) {
 
 // faqaccordion_card
 let footer__colon = document.querySelectorAll(".footer__colon");
-console.log(footer__colon);
+// console.log(footer__colon);
 for (let i = 0; i < footer__colon.length; i++) {
   let footer__colon_nav = footer__colon[i];
   footer__colon_nav.addEventListener("click", function () {
@@ -368,7 +493,7 @@ function toRenderI18nContent( language ) {
 }
 
 function renderContentOnPage( language ) {
-  console.log('language rendered')
+  // console.log('language rendered')
   return i18nReferences.map( toRenderI18nContent( language ) )
 }
 
@@ -413,4 +538,4 @@ function setUserNavigatorDefaultLanguage( language ) {
 
 
 window.onload = renderContentBy( navigator.language )
-console.log('stored language:' + localStorage.getItem('language'))
+// console.log('stored language:' + localStorage.getItem('language'))
