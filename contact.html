@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.min.css"
+      integrity="sha512-JQksK36WdRekVrvdxNyV3B0Q1huqbTkIQNbz1dlcFVgNynEMRl0F8OSqOGdVppLUDIvsOejhr/W5L3G/b3J+8w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <title data-i18n="dubai">Contact</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="index.html">
+                    <div class="logo"></div>
+                    <div class="logo__text">
+                        <div class="logo__text_title">DubaiRealty</div>   
+                        <div class="logo__suptext lng-suptitle">Real Estate</div> 
+                    </div>
+                </a>
+                
+            </div>
+        <div class="header__menu">
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle_item">Menu</span>
+            </button>
+            <nav class="header__menu_list">
+                <ul class="menu__list">
+                    <li>
+                        <a href="#" class="menu__nav_inner menu_active" data-i18n="buy">buy</a>
+                        <!-- <img class="menu__nav_inner-pic"></img> -->
+                        <img src="./images/Rectangle 889.png" alt="rectangle" class="menu__nav_inner-pic">
+                        <ul class="sub__menu_list">
+                          <li>
+                            <a href="#" class="sub_header_inner" data-i18n="categorone">Category number one</a>
+                          </li>
+                          <li>
+                            <a href="#" class="sub_header_inner" data-i18n="apartments">Apartments in Dubai</a>
+                          </li>
+                          <li>
+                            <a href="#" class="sub_header_inner" data-i18n="category">Category number twenty five</a>
+                          </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu__list">
+                    <li><a href="services.html" class="menu__nav_inner" data-i18n="services">services</a></li>
+                </ul>
+                <ul class="menu__list">
+                    <li><a href="about.html" class="menu__nav_inner" data-i18n="about">about</a></li>
+                </ul>
+                <ul class="menu__list">
+                    <li><a href="#" class="menu__nav_inner" data-i18n="contact">contact</a></li>
+                </ul>
+                <span class="nav-indicator"></span>
+            </nav>
+            <div class="header__inner">
+                <div class="header__inner_botton">
+                    <button class="header__button" data-i18n="button">Book a consultation</button>
+                </div>
+                <div class="header__inner_lang">
+                    <ul class="header__lang-picker">
+                          <a class="button__lang lang__active" role="button" id="english" data-renderlanguage="en">en</a>
+                          <a class="button__lang" role="button" id="ukrainian" data-renderlanguage="ua">ua</a>
+                    </ul>
+              </div>
+              <div class="header__inner_tel">
+                <a class="menu__inner_tel" href="tel:+38093 345 56 76"
+                >+38 (093) 345 56 76</a
+              >
+              </div>
+            </div>
+           
+        </div>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="contacts__container">
+            <div class="contact__title">Contact</div>
+            <div class="contact__title_search">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact__map">
+        <div class="contact__map_container">
+            <div class="contact__mapall">
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211519.29714455715!2d55.22573793752282!3d25.18395214836831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2z0JTRg9Cx0LDQuSAtINCU0YPQsdCw0ZcgLSDQntCxJ9GU0LTQvdCw0L3RliDQkNGA0LDQsdGB0YzQutGWINCV0LzRltGA0LDRgtC4!5e1!3m2!1suk!2sua!4v1698851928276!5m2!1suk!2sua" width="1800" height="768" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                  <div class="mapall" id="map"></div>
+                  <script async
+                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAs7ZlVMlBxAfkcx161InXaTP9AEsbDwE&callback=initMap" defer>
+              </script>
+                <!-- AIzaSyDAs7ZlVMlBxAfkcx161InXaTP9AEsbDwE -->
+            </div>
+            <div class="contact__map_card">
+                <div class="contact__map_title">
+                    <span class="contact__map_title-w">Dubai,</span>
+                    <span class="contact__map_title-or">UAE</span>
+                </div>
+                <div class="contact__map-text">269 King Str, 05th Floor, Utral Hosue Building, Dubai, VIC 3000, UAE.</div>
+                <div class="contact__map-telef">
+                    <a class="contact__map-tel" href="tel:+990344 956 4050">+99 (0) 344 956 4050</a>
+                </div>
+                
+                <div class="contact__map-em">
+                    <span class="contact__map-e">Email:</span> &nbsp;
+                    
+                    <a class="contact__map-email" href="info@sparch.com"> info@sparch.com</a>
+
+                </div>
+                <div class="contact__map-follow">Follow us:</div>
+                <div class="contact__map-work">
+                    <span class="contact__map-hours">Work Hours:</span> &nbsp;
+                    <span class="contact__map-time">Monday - Friday : 08h00 - 17h30</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="footer">
+        <div class="footer__liner"></div>
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <img src="./images/Logo.png" alt="logo" class="footer__logo_img">
+            </div>
+            <div class="footer__colon_inner">
+                <div class="footer__colon Buy">
+                    <div class="footer__colon_title">
+                        <span class="footer__title" href="">Buy</span>
+                        <div class="footer_card_arrow">
+                            <img class="footer_card_arrow-right" src="./images/arrow_right.png" alt="arrow-right">
+                            <img class="footer_card_arrow-down" src="./images/arrow_down.png" alt="arrow-down">
+                        </div>
+                    </div>
+                       
+                    <nav class="footer_inner_nav Buy">
+                        <ul class="footer_colon_menu_list">
+                        <li>
+                            <a class="footer_inner_bottoms" href="#">Apartment in Dubai</a>
+                        </li>
+                        <li>
+                            <a class="footer_inner_bottoms" href="#">House in Dubai</a>
+                        </li>
+                        <li>
+                            <a class="footer_inner_bottoms" href="#">Apartments in Dubai</a>
+                        </li>
+                        <li>
+                            <a class="footer_inner_bottoms" href="#">Loft in Dubai</a>
+                        </li>
+                        <li>
+                            <a class="footer_inner_bottoms" href="#">Penthouse in Dubai</a>
+                        </li>
+                        <li>
+                            <a class="footer_inner_bottoms" href="#">Villa in Dubai</a>
+                        </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__colon ">
+                    <div class="footer__colon_title ">
+                        <span class="footer__title" href="">Services</span>
+                        <div class="footer_card_arrow">
+                            <img class="footer_card_arrow-right" src="./images/arrow_right.png" alt="arrow-right">
+                            <img class="footer_card_arrow-down" src="./images/arrow_down.png" alt="arrow-down">
+                        </div>
+                    </div>
+                        <nav class="footer_inner_nav Services">
+                            <ul class="footer_colon_menu_list">
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Property management in Dubai, UAE</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Sell ​​property in Dubai, UAE</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Rent property in Dubai, UAE</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Investments in Dubai, UAE</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Real estate for cryptocurrency in Dubai</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Moving to Dubai, UAE</a>
+                            </li>
+                            </ul>
+                        </nav>
+                </div>
+                <div class="footer__colon Information">
+                    <div class="footer__colon_title ">
+                        <span class="footer__title" href="">Information</span>
+                        <div class="footer_card_arrow">
+                            <img class="footer_card_arrow-right" src="./images/arrow_right.png" alt="arrow-right">
+                            <img class="footer_card_arrow-down" src="./images/arrow_down.png" alt="arrow-down">
+                        </div>
+                    </div>
+                        <nav class="footer_inner_nav Information">
+                            <ul class="footer_colon_menu_list">
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Video</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Podcasts</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Laws</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Questions and answers</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Books</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Articles</a>
+                            </li>
+                            </ul>
+                        </nav>
+                </div>
+                <div class="footer__colon ">
+                    <div class="footer__colon_title">
+                        <span class="footer__title" href="">About company</span>
+                        <div class="footer_card_arrow">
+                            <img class="footer_card_arrow-right" src="./images/arrow_right.png" alt="arrow-right">
+                            <img class="footer_card_arrow-down" src="./images/arrow_down.png" alt="arrow-down">
+                        </div>
+                    </div>
+                        <nav class="footer_inner_nav company">
+                            <ul class="footer_colon_menu_list">
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Jobs</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Story</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Licenses</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Why are we</a>
+                            </li>
+                            <li>
+                                <a class="footer_inner_bottoms" href="#">Real estate agency</a>
+                            </li>
+                            </ul>
+                        </nav>
+                </div>
+                <div class="footer__colon colon__contact">
+                    <div class="footer__colon_title colon_title_contact">
+                        <span class="footer__title" href="">Contact</span></div>
+                        <nav class="footer_inner_nav_cont Contact">
+                            <div class="footer_inner_bottoms_all">
+                                <div class="footer_inner_bottoms-cont">
+                                    964 Worthington Drive Dubai, UAE
+                                </div>
+                                <div class="footer_inner_bottoms-cont">
+                                    dubairealty@mail.com
+                                </div>
+                            </div>
+                            <button class="header__button bottoms-cont" data-i18n="button">Book a consultation</button>
+                        </nav>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer__liner"></div>
+        <div class="footer_date_fon">
+            <div class="footer_date">
+              <span>
+                Copyright © <span class="footer_date_st" id="yearFooter">xxxx</span> Dubai Realty
+              </span>
+            </div>
+            <span class="footer_data_social">
+                <ul class="footer__social_soc">
+                    <li>
+                      <a href="#" class="footer-social socila-facebook" target="_blank">
+                          <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="footer-social socila-linkedin" target="_blank">
+                          <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="footer-social socila-whatsapp">
+                          <i class="fa-brands fa-youtube"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="footer-social socila-skype">
+                          <i class="fa-brands fa-instagram fa-lg"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="footer-social socila-linkedin" target="_blank">
+                          <i class="fa-brands fa-linkedin-in"></i>  
+                      </a>
+                    </li>
+                   
+                  </ul>
+            </span>
+            <span class="footer_data_inform"></span>
+          </div>
+    </section>
+
+
+
+    <script
+    src="https://kit.fontawesome.com/9dca6ed803.js"
+    crossorigin="anonymous"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+
+
+
+  <script src="JS/slick.min.js"></script>
+  <script src="./js/services.js"></script>
+</body>
+</html>

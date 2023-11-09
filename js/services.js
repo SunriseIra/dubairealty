@@ -1,3 +1,32 @@
+const indicator = document.querySelector('.nav-indicator');
+const items = document.querySelectorAll('.menu__list');
+const menu = document.querySelector('.header__menu_list');
+
+function handleIndicator(el) {
+  items.forEach(item => {
+    item.classList.remove('menu_active');
+    item.removeAttribute('style');
+  });
+  
+  indicator.style.width = `${el.offsetWidth}px`;
+  indicator.style.left = `${el.offsetLeft}px`;
+  el.classList.add('menu_active');
+}
+function resetIndicator() {
+  indicator.style.setProperty('left', 0);
+  indicator.style.setProperty('width', 0);
+}
+
+items.forEach((item) => {
+  item.addEventListener('mouseover', (e) => {
+    handleIndicator(e.target)
+  });
+  item.classList.contains('menu_active') && handleIndicator(item);
+});
+  menu.addEventListener('mouseleave', function() {
+    resetIndicator();
+});
+
 // burger menu
 let inner_nav = document.querySelector(".header__menu_list");
 let toggle = document.querySelector(".nav-toggle");
@@ -405,81 +434,168 @@ function setUserNavigatorDefaultLanguage( language ) {
 
 window.onload = renderContentBy( navigator.language )
 // console.log('stored language:' + localStorage.getItem('language'))
-// 
 // let term = document.querySelectorAll('.complete__plane_term');
 // console.log(term)
 
-
+/////
+///table
 // https://run.mocky.io/v3/0d03ca8f-ca8d-4780-80fe-bfe6e453fb57
 
+window.addEventListener("load", (event) => {
+
 let card_plhold = document.getElementById("cardDiv");
+
+
+
 
     fetch(`./data.json`)
         .then((response) => response.json())
         .then(function (data) {
         let vadata = Object.values(data);
         let valdata = vadata[0];
-        // console.log(valdata);
 
-        // let termAll = document.querySelectorAll('.complete__plate-check');
-        // let term = Array.from(termAll);
-        // console.log(term);
-   
           // console.log(valdata.length);
          valdata.forEach((obj) => {
         for (let i = 0; i < valdata.length; i++) { 
         if(obj.id === valdata[i].id){
           // console.log(valdata[i].id);
           // console.log(valdata.length);
+
         card_plhold.innerHTML += `
-        <div class="complete__plane_term" data-name="${valdata[i].id}">
-        <div class="complete__plate-list" data-name="${valdata[i].id}">${valdata[i].package}</div>
-        <div class="complete__plate-check" data-name="${valdata[i].id}">${popupImg()} </div>
-        </div>
-        `; 
-        }
-      }
+            <div class="complete__plane_term" data-name="${valdata[i].id}">
+                  <div class="complete__plate-list" data-name="${valdata[i].id}">${valdata[i].package}</div>
+                  <div class="complete__plate-check" data-name="${valdata[i].id}">
+                  <div class="complete__plate-checkmark" data-name="${valdata[i].id}"></div>
+                  <div class="complete__plate-manage" data-name="${valdata[i].id}"></div>
+                  </div>
+                  </div>
+                  `;  
+        }   
+      }     
       })
-        function popupImg() {
-          
-          // for (let i = 0; i < valdata.length; i++) {
-            let complete__plate = document.querySelectorAll(".complete__plate-check");
-            let completeAll = Array.from(complete__plate);
-            // console.log(completeAll);
-            // if(obj.id === valdata[i].id){
-              // console.log(obj.id === valdata[i].id)
-            // console.log(valdata[i].id);
-            // console.log(complete__plate);       
-                // completeAll.forEach((elem) => {
-                  // console.log(elem);
-                  // console.log(+elem.dataset.name);
-                  // console.log(valdata[i].id);
-                  // if (+elem.dataset.name === valdata[i].management ) {
-                  // console.log(elem);
-              //     if (valdata[i].management === true) {
-              //       console.log(5555);
-              // elem.innerHTML = 
-              //   `<div class="complete__plate-checkmark" data-name="${valdata[i].id}">1111</div>
-              //  `;
-              // }
-              // console.log(elem);
-            // }
-           //  })
-          // 
-        // };
-      // }
+
+      
+      function controlImg() {
+        valdata.forEach((obje) => {
+        // console.log(valdata.length);
+        if (obje.control === true){
+          let control__plate = document.querySelectorAll(".complete__plate-manage");
+         let controlAll = Array.from(control__plate);
+         controlAll.forEach((eleme) => {
+        if ( +eleme.dataset.name === obje.id) {  
+         eleme.innerHTML += `<div>✓</div>`
+        }  
+        })
+        } 
+        })
         }
-      
-      
-// if (valdata[i].id === data[i].id) {
- // <div class="complete__plate-check" data-name="${valdata[i].id}"> ${popupImg(valdata.id)}</div>
-//  <div class="complete__plate-manage" data-name="${valdata[i].id}">${valdata[i].control}</div>
+        controlImg();
+    
+      function popupImg() {
+      valdata.forEach((obj) => {
+      // console.log(valdata.length);
+      if (obj.management === true){
+        let complete__plate = document.querySelectorAll(".complete__plate-checkmark");
+       let completeAll = Array.from(complete__plate);
+      completeAll.forEach((elem) => {
+      if ( +elem.dataset.name === obj.id) {     
+       elem.innerHTML += `<div>✓</div>`
+      }  
+      })
+      } 
+      })
+      }
+          popupImg();
 
-// }
-
-    // }
-        // popupImg(valdata);
         })
         .catch(function () {
           //catch any errors
         });
+
+      })
+
+      // 
+      let map;
+      // let marker;
+      
+
+      function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 10,
+          center: { lat: 25.16, lng: 55.29 },
+        });
+
+        marker = new google.maps.Marker({
+          map,
+          draggable: true,
+          animation: google.maps.Animation.DROP,
+          position: { lat: 25.16, lng: 55.30 },
+        });
+        marker.addListener("click", toggleBounce);
+      }
+
+
+      function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+          marker.setAnimation(null);
+        } else {
+          marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+      }
+  //     async function initMap() {
+  // const position = { lat: 25.0731, lng: 55.29 };
+
+  // const { Map } = await google.maps.importLibrary("maps");
+  // // const  AdvancedMarkerView = new google.maps.importLibrary("marker");
+
+  // map = new Map(document.getElementById("map"), {
+  //   center: { lat: 25.07, lng: 55.2},
+  //   // mapId: "DEMO_MAP_ID",
+  //   zoom: 10,
+  // });
+
+
+  // async function initMap() {
+  //   const position = { lat: 25.0731, lng: 55.29 };
+  
+  //   const { Map } = await google.maps.importLibrary("maps");
+  //   // const  AdvancedMarkerView = new google.maps.importLibrary("marker");
+  
+  //   map = new Map(document.getElementById("map"), {
+  //     center: { lat: 25.07, lng: 55.2},
+  //     // mapId: "DEMO_MAP_ID",
+  //     zoom: 10,
+  //   });
+
+  // const marker = new google.maps.Marker({
+  //   map,
+  //   draggable: true,
+  //   animation: google.maps.Animation.DROP,
+  //   position: { lat: 59.327, lng: 18.067 },
+  // });
+  // marker.addListener("click", toggleBounce);
+// }
+// function toggleBounce() {
+//   if (marker.getAnimation() !== null) {
+//   marker.setAnimation(null);
+//   } else {
+//   marker.setAnimation(google.maps.Animation.BOUNCE);
+//   }
+//   }
+  
+
+  // const marker = new AdvancedMarkerView({
+  //    map,
+  //   position: position,
+  //   // title: "Dubai",
+  //   icon: image,
+  // });
+
+window.initMap = initMap
+// initMap();
+
+
+
+
+
+
