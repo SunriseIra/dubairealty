@@ -546,7 +546,23 @@ let card_plhold = document.getElementById("cardDiv");
  
              window.mapInita = mapInita
 
-    
+/////
+document.querySelectorAll('.sub__menu_all').forEach(dropDownFunc);
+function dropDownFunc(dropDown) {
+  if (dropDown.classList.contains('click-dropdown') === true) {
+    dropDown.addEventListener('click', function (e) {
+      e.preventDefault();
+      console.log(1111);
+      let submenu = document.querySelector('.sub__menu_list')
+      if (submenu.classList.contains('list_active') === false) {
+        submenu.classList.add('list_active');
+      } else {
+        submenu.classList.remove('list_active');
+      }
+    })
+  }
+}
+
 
 
 
