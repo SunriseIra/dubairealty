@@ -337,7 +337,7 @@ document.getElementById("yearFooter").innerHTML = d.getFullYear();
 let data = 
 {
  "en": {
-   "buy": "buy >",
+   "buy": "buy",
    "categorone": "Category number one",
    "apartments": "Apartments in Dubai",
    "category": "Category number twenty five",
@@ -377,7 +377,7 @@ let data =
     "":"",
  },
  "ua": {
-   "buy": "покупка >",
+   "buy": "покупка",
    "categorone": "Категорія номер один",
    "apartments": "Квартири в Дубаї",
    "category": "Категорія номер 25",
