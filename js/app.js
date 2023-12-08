@@ -7,7 +7,25 @@ toggle.addEventListener("click", function () {
   inner_nav.classList.toggle("active");
 });
 /////
+  document.querySelectorAll('.sub__menu_all').forEach(dropDownFunc);
+function dropDownFunc(dropDown) {
+  if (dropDown.classList.contains('click-dropdown') === true) {
+    dropDown.addEventListener('click', function (e) {
+      e.preventDefault();
+      console.log(1111);
+      let submenu = document.querySelector('.sub__menu_list')
+      if (submenu.classList.contains('list_active') === false) {
+        submenu.classList.add('list_active');
+      } else {
+        submenu.classList.remove('list_active');
+      }
+    })
+  } 
+  }
+
+
 //// change nav color when hover
+
 // let header_ass = document.querySelector(".header__menu_list");
 // let header__inner_tel = document.querySelector(".header__inner_tel");
 // const fixedmenu = () => {
@@ -180,13 +198,26 @@ $(document).ready(function() {
 const indicator = document.querySelector('.nav-indicator');
 const items = document.querySelectorAll('.menu__list');
 const menu = document.querySelector('.header__menu_list');
+let smenu = document.querySelector('.menu__nav_inner');
+let sfMenu = document.querySelectorAll('.sub__menu_all');
+
+// console.log(sfMenu);
+
+
+sfMenu.forEach((items) => {
+  let sfinMenu = items.lastElementChild;
+  // console.log(sfinMenu);
+})
 
 function handleIndicator(el) {
   items.forEach(item => {
     item.classList.remove('menu_active');
     item.removeAttribute('style');
+const menu = document.querySelector('.header__menu_list');
+
+   
   });
-  
+
   indicator.style.width = `${el.offsetWidth}px`;
   indicator.style.left = `${el.offsetLeft}px`;
   el.classList.add('menu_active');
@@ -306,12 +337,12 @@ document.getElementById("yearFooter").innerHTML = d.getFullYear();
 let data = 
 {
  "en": {
-   "buy": "buy",
+   "buy": "buy >",
    "categorone": "Category number one",
    "apartments": "Apartments in Dubai",
    "category": "Category number twenty five",
    "services": "services",
-   "about": "about",
+   "blog": "blog",
    "contact": "contact",
    "button": "Book a consultation",
    "welcome": "Welcome home",
@@ -346,12 +377,12 @@ let data =
     "":"",
  },
  "ua": {
-   "buy": "покупка",
+   "buy": "покупка >",
    "categorone": "Категорія номер один",
    "apartments": "Квартири в Дубаї",
    "category": "Категорія номер 25",
    "services": "сервіс",
-   "about": "про нас",
+   "blog": "блог",
    "contact": "контакт",
    "button": "Записатись на консультацію",
    "welcome": "Ласкаво просимо до дому",

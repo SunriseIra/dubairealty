@@ -205,11 +205,6 @@ $(document).ready(function() {
     ]
   });
 
-
-
-
-
-
 ///validation email
 const email = document.querySelector('input[name=email]');
 const button = document.querySelector('#btn');
@@ -278,7 +273,7 @@ let data =
     "apartments": "Apartments in Dubai",
     "category": "Category number twenty five",
     "services": "services",
-    "about": "about",
+    "blog": "blog",
     "contact": "contact",
     "button": "Book a consultation",
     "welcome": "Welcome home",
@@ -330,7 +325,7 @@ let data =
     "apartments": "Квартири в Дубаї",
     "category": "Категорія номер 25",
     "services": "сервіс",
-    "about": "про нас",
+    "blog": "блог",
     "contact": "контакт",
     "button": "Записатись на консультацію",
     "welcome": "Ласкаво просимо до дому",
@@ -514,12 +509,19 @@ let card_plhold = document.getElementById("cardDiv");
 
       })
 
-      // 
-      let map;
+      //////////////
 
-      
+      // window.addEventListener("load", (event) => {
 
-      function initMap() {
+      // import { config } from './config';
+
+      // config();
+      // import { config } from './config';
+
+        let map;
+        
+       function mapInita() {
+
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 10,
           center: { lat: 25.16, lng: 55.29 },
@@ -542,10 +544,9 @@ let card_plhold = document.getElementById("cardDiv");
         }
       }
  
-window.initMap = initMap
+             window.mapInita = mapInita
 
-
-
+    
 
 
 

@@ -81,7 +81,7 @@
                     <li><a href="services.html" class="menu__nav_inner" data-i18n="services">services</a></li>
                 </ul>
                 <ul class="menu__list">
-                    <li><a href="about.html" class="menu__nav_inner" data-i18n="about">about</a></li>
+                    <li><a href="blog.html" class="menu__nav_inner" data-i18n="blog">blog</a></li>
                 </ul>
                 <ul class="menu__list">
                     <li><a href="#" class="menu__nav_inner" data-i18n="contact">contact</a></li>
@@ -120,12 +120,18 @@
     <section class="contact__map">
         <div class="contact__map_container">
             <div class="contact__mapall">
-                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d211519.29714455715!2d55.22573793752282!3d25.18395214836831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2z0JTRg9Cx0LDQuSAtINCU0YPQsdCw0ZcgLSDQntCxJ9GU0LTQvdCw0L3RliDQkNGA0LDQsdGB0YzQutGWINCV0LzRltGA0LDRgtC4!5e1!3m2!1suk!2sua!4v1698851928276!5m2!1suk!2sua" width="1800" height="768" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-                  <div class="mapall" id="map"></div>
-                  <script async
-                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAs7ZlVMlBxAfkcx161InXaTP9AEsbDwE&callback=initMap" defer>
-              </script>
-                <!-- AIzaSyDAs7ZlVMlBxAfkcx161InXaTP9AEsbDwE -->
+                <div class="mapall" id="map"></div>
+                    <!-- type="module" -->
+                <script  async
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAs7ZlVMlBxAfkcx161InXaTP9AEsbDwE&callback=mapInita">
+        
+                    // import { config } from './js/config.js';
+                            
+                </script>
+
+                                
+
+
             </div>
             <div class="contact__map_card">
                 <div class="contact__map_title">
@@ -153,7 +159,46 @@
         </div>
     </section>
 
-    
+    <section class="contact__quastion">
+        <div class="contact__container_quest">
+            <div class="question_section_form_colon_all">
+  
+                <div>
+                  <form id="question_form">
+                    <div class="question_section_form_colon">
+                        <div class="question_section_form">
+                          <span class="question_span">no data entered</span>
+                        <input type="text" class=" myelem question_form_input input_fname " id="fname" name="fname" placeholder="Name">
+                        <div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div>
+                        <div class="question_section_form">
+                          <span class="question_span">no data entered</span>
+                          <input type="email" class="myelem question_form_input input_email" name="email" id="email" placeholder="Email *">
+                        </div>
+                        <div class="question_section_form">
+                            <span class="question_span">no data entered</span>
+                            <input type="tel" class="myelem question_form_input input_subject" name="subject" id="subject" placeholder="Subject">
+                          </div>
+                     
+                    </div>
+               
+                 </form></div>
+                 <div class="question_section_form_col"> 
+                  <div class="question_section_form">
+      
+                    <span class="question_span">no data entered</span>
+                    <textarea name="message" class="myelem question_form_message form_message" placeholder="Message *"></textarea>
+                  </div>
+                 
+                    <button type="submit" class="question_form_button" placeholder="Submit">Submit</button>
+                 </div>
+                
+                   
+      
+      
+      
+              </div>
+        </div>
+    </section>
 
     <section class="footer">
         <div class="footer__liner"></div>
@@ -365,6 +410,7 @@
 
 
   <script src="JS/slick.min.js"></script>
+  <script src="./js/config.js"></script>
   <script src="./js/services.js"></script>
 </body>
 </html>
